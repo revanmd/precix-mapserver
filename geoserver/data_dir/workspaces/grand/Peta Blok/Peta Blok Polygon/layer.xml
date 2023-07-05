@@ -1,0 +1,22 @@
+<layer>
+  <name>Peta Blok Polygon</name>
+  <id>LayerInfoImpl--398f8ad:1831c223212:41b8</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--398f8ad:1831c223212:41bf</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--570ae188:124761b8d78:-7fe0</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--398f8ad:1831c223212:41b7</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-09-13 18:17:29.89 UTC</dateCreated>
+  <dateModified>2022-09-13 18:25:18.368 UTC</dateModified>
+</layer>

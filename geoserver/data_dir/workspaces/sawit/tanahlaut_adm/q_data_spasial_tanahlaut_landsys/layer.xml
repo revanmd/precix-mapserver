@@ -1,0 +1,13 @@
+<layer>
+  <name>q_data_spasial_tanahlaut_landsys</name>
+  <id>LayerInfoImpl--5706e53b:1814c6b2c20:-71e3</id>
+  <type>VECTOR</type>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--5706e53b:1814c6b2c20:-71e4</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-06-10 08:41:59.879 UTC</dateCreated>
+</layer>

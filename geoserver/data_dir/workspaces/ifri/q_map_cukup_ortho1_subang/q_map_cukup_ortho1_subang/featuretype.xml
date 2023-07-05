@@ -1,0 +1,44 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-268eb811:1830224494d:-4769</id>
+  <name>q_map_cukup_ortho1_subang</name>
+  <nativeName>q_map_cukup_ortho1_subang</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-268eb811:182e49bbebd:-1698</id>
+  </namespace>
+  <title>q_map_cukup_ortho1_subang</title>
+  <keywords>
+    <string>q_map_cukup_ortho1_subang</string>
+    <string>features</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>107.6452452123</minx>
+    <maxx>107.653744604</maxx>
+    <miny>-6.3431202561</miny>
+    <maxy>-6.3364627269</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>107.6452452123</minx>
+    <maxx>107.653744604</maxx>
+    <miny>-6.3431202561</miny>
+    <maxy>-6.3364627269</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-268eb811:1830224494d:-476a</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

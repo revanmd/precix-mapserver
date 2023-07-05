@@ -1,0 +1,22 @@
+<layer>
+  <name>peta_sebaran_hara_p_ortho1_purworejo</name>
+  <id>LayerInfoImpl-3010d686:183bf8fa957:-6c67</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-145d3c3f:183be208ad1:-79f7</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-145d3c3f:183be208ad1:-79f7</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-3010d686:183bf8fa957:-6c68</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-10-10 01:57:53.596 UTC</dateCreated>
+  <dateModified>2022-10-10 01:58:15.676 UTC</dateModified>
+</layer>

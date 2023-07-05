@@ -1,0 +1,53 @@
+<GeoServerTileLayer>
+  <id>LayerInfoImpl--398f8ad:18308237104:-27a9</id>
+  <enabled>true</enabled>
+  <inMemoryCached>true</inMemoryCached>
+  <name>ifri:VPoint unsur hara orthomosaik 1 subang N</name>
+  <mimeFormats>
+    <string>image/png</string>
+    <string>image/jpeg</string>
+  </mimeFormats>
+  <gridSubsets>
+    <gridSubset>
+      <gridSetName>EPSG:4326</gridSetName>
+      <extent>
+        <coords>
+          <double>107.64522677542918</double>
+          <double>-6.3431386980454425</double>
+          <double>107.65379991457071</double>
+          <double>-6.33644428495467</double>
+        </coords>
+      </extent>
+    </gridSubset>
+    <gridSubset>
+      <gridSetName>EPSG:900913</gridSetName>
+      <extent>
+        <coords>
+          <double>1.1983011830967234E7</double>
+          <double>-707561.8107015949</double>
+          <double>1.1983966188450968E7</double>
+          <double>-706812.0066224611</double>
+        </coords>
+      </extent>
+    </gridSubset>
+  </gridSubsets>
+  <metaWidthHeight>
+    <int>4</int>
+    <int>4</int>
+  </metaWidthHeight>
+  <expireCache>0</expireCache>
+  <expireClients>0</expireClients>
+  <parameterFilters>
+    <styleParameterFilter>
+      <key>STYLES</key>
+      <defaultValue></defaultValue>
+      <availableStyles class="sorted-set">
+        <string>VPoint unsur hara orthomosaik 1 subang N</string>
+        <string>VPoint unsur hara orthomosaik N</string>
+      </availableStyles>
+      <defaultStyle>VPoint unsur hara orthomosaik 1 subang N</defaultStyle>
+    </styleParameterFilter>
+  </parameterFilters>
+  <gutter>0</gutter>
+  <cacheWarningSkips/>
+</GeoServerTileLayer>

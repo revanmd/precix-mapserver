@@ -1,0 +1,22 @@
+<layer>
+  <name>peta_status_p_ortho1_purworejo</name>
+  <id>LayerInfoImpl-3010d686:183bf8fa957:-6c7e</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-145d3c3f:183bd00fa9f:-7fd3</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-145d3c3f:183bd00fa9f:-7fd3</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-3010d686:183bf8fa957:-6c7f</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-10-10 01:48:18.417 UTC</dateCreated>
+  <dateModified>2022-10-10 01:48:41.953 UTC</dateModified>
+</layer>

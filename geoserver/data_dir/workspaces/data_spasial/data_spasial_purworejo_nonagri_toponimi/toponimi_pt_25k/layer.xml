@@ -1,0 +1,22 @@
+<layer>
+  <name>toponimi_pt_25k</name>
+  <id>LayerInfoImpl-665bd1f:17e9f01d1c5:-7c28</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-665bd1f:17e9f01d1c5:-7bc9</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--570ae188:124761b8d78:-7fdf</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-665bd1f:17e9f01d1c5:-7c29</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-01-28 18:23:38.600 UTC</dateCreated>
+  <dateModified>2022-01-28 18:50:44.854 UTC</dateModified>
+</layer>

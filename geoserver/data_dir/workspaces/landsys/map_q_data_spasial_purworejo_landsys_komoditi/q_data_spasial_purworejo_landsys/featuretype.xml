@@ -1,0 +1,44 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-1d6703e9:17ef269489a:4846</id>
+  <name>q_data_spasial_purworejo_landsys</name>
+  <nativeName>q_data_spasial_purworejo_landsys</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-1d6703e9:17ef269489a:4757</id>
+  </namespace>
+  <title>Peta_landsys_Komoditi</title>
+  <keywords>
+    <string>features</string>
+    <string>q_data_spasial_purworejo_landsys</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>109.798067</minx>
+    <maxx>110.140485</maxx>
+    <miny>-7.89647799999999</miny>
+    <maxy>-7.51926899999999</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>109.798067</minx>
+    <maxx>110.140485</maxx>
+    <miny>-7.89647799999999</miny>
+    <maxy>-7.51926899999999</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-1d6703e9:17ef269489a:4758</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

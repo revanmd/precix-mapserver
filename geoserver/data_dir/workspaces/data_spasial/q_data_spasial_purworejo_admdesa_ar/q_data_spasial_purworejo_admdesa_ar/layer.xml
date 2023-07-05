@@ -1,0 +1,16 @@
+<layer>
+  <name>q_data_spasial_purworejo_admdesa_ar</name>
+  <id>LayerInfoImpl-665bd1f:17e9f01d1c5:-4cfb</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-37b18cc6:14d5d036d48:-8000</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-665bd1f:17e9f01d1c5:-4cfc</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-01-29 07:36:10.890 UTC</dateCreated>
+</layer>

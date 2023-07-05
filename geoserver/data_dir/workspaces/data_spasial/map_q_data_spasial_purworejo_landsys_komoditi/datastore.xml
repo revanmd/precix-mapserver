@@ -1,0 +1,32 @@
+<dataStore>
+  <id>DataStoreInfoImpl-1d6703e9:17ef269489a:3479</id>
+  <name>map_q_data_spasial_purworejo_landsys_komoditi</name>
+  <type>MySQL</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-665bd1f:17e9f01d1c5:-7c4b</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="Evictor run periodicity">300</entry>
+    <entry key="fetch size">1000</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="validate connections">true</entry>
+    <entry key="Connection timeout">20</entry>
+    <entry key="Batch insert size">1</entry>
+    <entry key="database">tandhur</entry>
+    <entry key="port">3306</entry>
+    <entry key="passwd">crypt1:kIytjdos8/45VRC10u0usQS0+2feyYrL</entry>
+    <entry key="storage engine">MyISAM</entry>
+    <entry key="min connections">1</entry>
+    <entry key="dbtype">mysql</entry>
+    <entry key="host">localhost</entry>
+    <entry key="namespace">data_spasial</entry>
+    <entry key="max connections">10</entry>
+    <entry key="Evictor tests per run">3</entry>
+    <entry key="Test while idle">true</entry>
+    <entry key="user">badar</entry>
+    <entry key="Max connection idle time">300</entry>
+  </connectionParameters>
+  <__default>false</__default>
+  <dateCreated>2022-02-14 08:37:52.437 UTC</dateCreated>
+</dataStore>

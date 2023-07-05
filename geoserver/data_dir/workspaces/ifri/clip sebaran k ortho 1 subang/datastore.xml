@@ -1,0 +1,24 @@
+<dataStore>
+  <id>DataStoreInfoImpl--398f8ad:1830ba8d42c:1543</id>
+  <name>clip sebaran k ortho 1 subang</name>
+  <type>Shapefile</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-268eb811:182e49bbebd:-1699</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="charset">ISO-8859-1</entry>
+    <entry key="filetype">shapefile</entry>
+    <entry key="create spatial index">true</entry>
+    <entry key="memory mapped buffer">false</entry>
+    <entry key="timezone">Asia/Jakarta</entry>
+    <entry key="enable spatial index">true</entry>
+    <entry key="namespace">ifri</entry>
+    <entry key="cache and reuse memory maps">true</entry>
+    <entry key="skipScan">true</entry>
+    <entry key="url">file:///var/www/html/ifri/vektor/clip/ortho 1 subang k clip.shp</entry>
+    <entry key="fstype">shape</entry>
+  </connectionParameters>
+  <__default>false</__default>
+  <dateCreated>2022-09-05 07:25:19.89 UTC</dateCreated>
+</dataStore>

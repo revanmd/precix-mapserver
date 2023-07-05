@@ -1,0 +1,44 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--6bb10c95:181a94f0aa9:-4a49</id>
+  <name>peta_bangunan</name>
+  <nativeName>peta_bangunan</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--6bb10c95:181a94f0aa9:-4a4b</id>
+  </namespace>
+  <title>peta_bangunan</title>
+  <keywords>
+    <string>features</string>
+    <string>peta_bangunan</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>112.030615492794</minx>
+    <maxx>112.4590594</maxx>
+    <miny>-8.33066113327533</miny>
+    <maxy>-7.91790140000003</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>112.030615492794</minx>
+    <maxx>112.4590594</maxx>
+    <miny>-8.33066113327533</miny>
+    <maxy>-7.91790140000003</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--6bb10c95:181a94f0aa9:-4a4a</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

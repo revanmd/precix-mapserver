@@ -1,0 +1,13 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl-268eb811:182e49bbebd:-1697</id>
+  <name>Orthomosaik_0_Subang</name>
+  <type>GeoTIFF</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-268eb811:182e49bbebd:-1699</id>
+  </workspace>
+  <__default>false</__default>
+  <dateCreated>2022-08-28 14:56:47.42 UTC</dateCreated>
+  <dateModified>2022-08-28 14:57:00.52 UTC</dateModified>
+  <url>file:///var/www/html/ifri/raster/202208282138500.subang_ortho0_composite_21cm.tif</url>
+</coverageStore>

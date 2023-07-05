@@ -1,0 +1,21 @@
+<layer>
+  <name>sawah_sragen_ortho_1</name>
+  <id>LayerInfoImpl-3010d686:183bf5a08b4:-32c8</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-145d3c3f:183bd00fa9f:-7ffe</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-145d3c3f:183bd00fa9f:-7ffe</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-3010d686:183bf5a08b4:-32c9</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-10-10 00:54:37.213 UTC</dateCreated>
+</layer>

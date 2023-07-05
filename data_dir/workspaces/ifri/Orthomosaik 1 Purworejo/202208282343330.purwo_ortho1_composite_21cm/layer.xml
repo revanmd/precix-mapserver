@@ -1,0 +1,16 @@
+<layer>
+  <name>202208282343330.purwo_ortho1_composite_21cm</name>
+  <id>LayerInfoImpl-3010d686:183bf884c59:5fe4</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe2</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl-3010d686:183bf884c59:5fe3</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-10-10 01:40:29.252 UTC</dateCreated>
+</layer>

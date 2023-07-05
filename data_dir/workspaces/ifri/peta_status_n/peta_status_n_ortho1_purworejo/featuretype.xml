@@ -1,0 +1,47 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-3010d686:183bf8fa957:-6c82</id>
+  <name>peta_status_n_ortho1_purworejo</name>
+  <nativeName>peta_status_n</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-268eb811:182e49bbebd:-1698</id>
+  </namespace>
+  <title>peta_status_n</title>
+  <keywords>
+    <string>features</string>
+    <string>peta_status_n</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>109.981576713</minx>
+    <maxx>109.984381662</maxx>
+    <miny>-7.8058695577</miny>
+    <maxy>-7.804549511</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>109.981576713</minx>
+    <maxx>109.984381662</maxx>
+    <miny>-7.8058695577</miny>
+    <maxy>-7.804549511</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-145d3c3f:183bd00fa9f:-7fd8</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <cqlFilter>idraster_upload=4</cqlFilter>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

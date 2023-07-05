@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><userRegistry xmlns="http://www.geoserver.org/security/users" version="1.0">
+<users>
+<user enabled="true" name="admin" password="digest1:C1bL0MuNKV7lxOQIYhOCseIfD7UppVXrsF3iVMA5xd4M1sIp8Ta0mB8CNoIDGNZZ"/>
+<user enabled="true" name="ifri" password="digest1:Kro7mLHzKAka68i3II7/LBwyLb9un9vukq7+NGlx7jiLbPLBPUOi2dnoxY9IHyJq"/>
+</users>
+<groups>
+<group enabled="true" name="ifri">
+<member username="ifri"/>
+</group>
+</groups>
+</userRegistry>

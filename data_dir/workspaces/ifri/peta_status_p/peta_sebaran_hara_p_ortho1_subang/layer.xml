@@ -1,0 +1,22 @@
+<layer>
+  <name>peta_sebaran_hara_p_ortho1_subang</name>
+  <id>LayerInfoImpl-145d3c3f:183be208ad1:-79f4</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-145d3c3f:183be208ad1:-79f7</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-145d3c3f:183be208ad1:-79f7</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-145d3c3f:183be208ad1:-79f5</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-10-09 19:16:24.617 UTC</dateCreated>
+  <dateModified>2022-10-10 01:51:02.653 UTC</dateModified>
+</layer>

@@ -1,0 +1,16 @@
+<layer>
+  <name>Extract_shp1</name>
+  <id>LayerInfoImpl-268eb811:182b702d5ad:3b12</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fdf</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-268eb811:182b702d5ad:3b11</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-08-19 19:28:36.934 UTC</dateCreated>
+</layer>

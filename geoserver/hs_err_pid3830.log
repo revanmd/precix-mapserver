@@ -1,0 +1,1157 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 262144 bytes for committing reserved memory.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_linux.cpp:2798), pid=3830, tid=0x00007f7ac5c20700
+#
+# JRE version: OpenJDK Runtime Environment (8.0_312-b07) (build 1.8.0_312-8u312-b07-0ubuntu1~18.04-b07)
+# Java VM: OpenJDK 64-Bit Server VM (25.312-b07 mixed mode linux-amd64 compressed oops)
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f7abc00c000):  JavaThread "main" [_thread_in_vm, id=3836, stack(0x00007f7ac5b21000,0x00007f7ac5c21000)]
+
+Stack: [0x00007f7ac5b21000,0x00007f7ac5c21000],  sp=0x00007f7ac5c1a0c0,  free space=996k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0xb6dd22]
+V  [libjvm.so+0x4f22a7]
+V  [libjvm.so+0x993a70]
+V  [libjvm.so+0x98af1e]
+V  [libjvm.so+0xb6a4a0]
+V  [libjvm.so+0x8fc9e9]
+V  [libjvm.so+0x8fe71f]
+V  [libjvm.so+0x8ff013]
+V  [libjvm.so+0x8ffa55]
+V  [libjvm.so+0x4ede04]
+V  [libjvm.so+0x4466c9]
+V  [libjvm.so+0x447a9b]
+V  [libjvm.so+0xadbe6b]
+V  [libjvm.so+0x75758f]
+V  [libjvm.so+0x758d0a]  JVM_DefineClass+0x8a
+V  [libjvm.so+0xb30beb]
+V  [libjvm.so+0xb34e09]
+j  sun.misc.Unsafe.defineClass(Ljava/lang/String;[BIILjava/lang/ClassLoader;Ljava/security/ProtectionDomain;)Ljava/lang/Class;+0
+j  sun.reflect.ClassDefiner.defineClass(Ljava/lang/String;[BIILjava/lang/ClassLoader;)Ljava/lang/Class;+27
+j  sun.reflect.MethodAccessorGenerator$1.run()Lsun/reflect/MagicAccessorImpl;+21
+j  sun.reflect.MethodAccessorGenerator$1.run()Ljava/lang/Object;+1
+v  ~StubRoutines::call_stub
+V  [libjvm.so+0x6b0e3a]
+V  [libjvm.so+0x766280]  JVM_DoPrivileged+0x550
+J 1299  java.security.AccessController.doPrivileged(Ljava/security/PrivilegedAction;)Ljava/lang/Object; (0 bytes) @ 0x00007f7aad459d7f [0x00007f7aad459cc0+0xbf]
+j  sun.reflect.MethodAccessorGenerator.generate(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;Ljava/lang/Class;[Ljava/lang/Class;IZZLjava/lang/Class;)Lsun/reflect/MagicAccessorImpl;+755
+j  sun.reflect.MethodAccessorGenerator.generateConstructor(Ljava/lang/Class;[Ljava/lang/Class;[Ljava/lang/Class;I)Lsun/reflect/ConstructorAccessor;+14
+J 1668 C1 sun.reflect.NativeConstructorAccessorImpl.newInstance([Ljava/lang/Object;)Ljava/lang/Object; (89 bytes) @ 0x00007f7aad582a3f [0x00007f7aad582800+0x23f]
+J 6474 C1 sun.reflect.DelegatingConstructorAccessorImpl.newInstance([Ljava/lang/Object;)Ljava/lang/Object; (9 bytes) @ 0x00007f7aae029303 [0x00007f7aae029200+0x103]
+J 6433 C1 java.lang.reflect.Constructor.newInstance([Ljava/lang/Object;)Ljava/lang/Object; (87 bytes) @ 0x00007f7aad170472 [0x00007f7aad16ffc0+0x4b2]
+J 7185 C1 org.geoserver.config.util.SecureXStream.registerConverterDynamically(Ljava/lang/String;I[Ljava/lang/Class;[Ljava/lang/Object;)V (136 bytes) @ 0x00007f7aae2e0ee4 [0x00007f7aae2e0e00+0xe4]
+j  org.geoserver.config.util.SecureXStream.setupConverters()V+949
+j  com.thoughtworks.xstream.XStream.<init>(Lcom/thoughtworks/xstream/converters/reflection/ReflectionProvider;Lcom/thoughtworks/xstream/io/HierarchicalStreamDriver;Lcom/thoughtworks/xstream/core/ClassLoaderReference;Lcom/thoughtworks/xstream/mapper/Mapper;Lcom/thoughtworks/xstream/converters/ConverterLookup;Lcom/thoughtworks/xstream/converters/ConverterRegistry;)V+74
+j  com.thoughtworks.xstream.XStream.<init>(Lcom/thoughtworks/xstream/converters/reflection/ReflectionProvider;Lcom/thoughtworks/xstream/io/HierarchicalStreamDriver;Lcom/thoughtworks/xstream/core/ClassLoaderReference;Lcom/thoughtworks/xstream/mapper/Mapper;Lcom/thoughtworks/xstream/core/DefaultConverterLookup;)V+24
+j  com.thoughtworks.xstream.XStream.<init>(Lcom/thoughtworks/xstream/converters/reflection/ReflectionProvider;Lcom/thoughtworks/xstream/io/HierarchicalStreamDriver;Ljava/lang/ClassLoader;Lcom/thoughtworks/xstream/mapper/Mapper;)V+20
+j  com.thoughtworks.xstream.XStream.<init>(Lcom/thoughtworks/xstream/converters/reflection/ReflectionProvider;Lcom/thoughtworks/xstream/mapper/Mapper;Lcom/thoughtworks/xstream/io/HierarchicalStreamDriver;)V+11
+j  com.thoughtworks.xstream.XStream.<init>(Lcom/thoughtworks/xstream/converters/reflection/ReflectionProvider;)V+13
+j  org.geoserver.config.util.SecureXStream.<init>(Lcom/thoughtworks/xstream/converters/reflection/ReflectionProvider;)V+2
+j  org.geoserver.config.util.XStreamPersister.<init>(Lcom/thoughtworks/xstream/io/HierarchicalStreamDriver;)V+117
+j  org.geoserver.config.util.XStreamPersisterFactory.buildPersister(Lcom/thoughtworks/xstream/io/HierarchicalStreamDriver;)Lorg/geoserver/config/util/XStreamPersister;+5
+j  org.geoserver.config.util.XStreamPersisterFactory.createXMLPersister()Lorg/geoserver/config/util/XStreamPersister;+2
+j  org.geoserver.config.util.XStreamServiceLoader.load(Lorg/geoserver/config/GeoServer;Lorg/geoserver/platform/resource/Resource;)Lorg/geoserver/config/ServiceInfo;+40
+j  org.geoserver.config.GeoServerLoader.loadServices(Lorg/geoserver/platform/resource/Resource;ZLjava/util/List;Lorg/geoserver/config/GeoServer;)V+35
+j  org.geoserver.config.GeoServerLoader.readConfiguration(Lorg/geoserver/config/GeoServer;Lorg/geoserver/config/util/XStreamPersister;)V+439
+j  org.geoserver.config.DefaultGeoServerLoader.loadGeoServer(Lorg/geoserver/config/GeoServer;Lorg/geoserver/config/util/XStreamPersister;)V+84
+j  org.geoserver.config.GeoServerLoader.postProcessBeforeInitialization(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;+119
+j  org.geoserver.config.GeoServerLoaderProxy.postProcessBeforeInitialization(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;+13
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;+39
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/beans/factory/support/RootBeanDefinition;)Ljava/lang/Object;+49
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;+245
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;+169
+j  org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;+4
+j  org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$88.getObject()Ljava/lang/Object;+16
+j  org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(Ljava/lang/String;Lorg/springframework/beans/factory/ObjectFactory;)Ljava/lang/Object;+132
+j  org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Object;Z)Ljava/lang/Object;+467
+j  org.springframework.beans.factory.support.AbstractBeanFactory.getBean(Ljava/lang/String;)Ljava/lang/Object;+5
+j  org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(Ljava/lang/Object;Lorg/springframework/beans/factory/config/RuntimeBeanReference;)Ljava/lang/Object;+104
+j  org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;+15
+j  org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;Lorg/springframework/beans/BeanWrapper;Lorg/springframework/beans/factory/config/ConstructorArgumentValues;Lorg/springframework/beans/factory/config/ConstructorArgumentValues;)I+298
+j  org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)Lorg/springframework/beans/BeanWrapper;+380
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)Lorg/springframework/beans/BeanWrapper;+13
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Lorg/springframework/beans/BeanWrapper;+221
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;+34
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;+169
+j  org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;+4
+j  org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$88.getObject()Ljava/lang/Object;+16
+j  org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(Ljava/lang/String;Lorg/springframework/beans/factory/ObjectFactory;)Ljava/lang/Object;+132
+j  org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Object;Z)Ljava/lang/Object;+467
+j  org.springframework.beans.factory.support.AbstractBeanFactory.getBean(Ljava/lang/String;)Ljava/lang/Object;+5
+j  org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons()V+248
+j  org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V+124
+j  org.springframework.context.support.AbstractApplicationContext.refresh()V+54
+j  org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(Lorg/springframework/web/context/ConfigurableWebApplicationContext;Ljavax/servlet/ServletContext;)V+135
+j  org.springframework.web.context.ContextLoader.initWebApplicationContext(Ljavax/servlet/ServletContext;)Lorg/springframework/web/context/WebApplicationContext;+132
+j  org.springframework.web.context.ContextLoaderListener.contextInitialized(Ljavax/servlet/ServletContextEvent;)V+5
+j  org.geoserver.platform.GeoServerContextLoaderListener.contextInitialized(Ljavax/servlet/ServletContextEvent;)V+2
+j  org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(Ljavax/servlet/ServletContextListener;Ljavax/servlet/ServletContextEvent;)V+35
+j  org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(Ljavax/servlet/ServletContextListener;Ljavax/servlet/ServletContextEvent;)V+19
+j  org.eclipse.jetty.server.handler.ContextHandler.startContext()V+106
+j  org.eclipse.jetty.servlet.ServletContextHandler.startContext()V+93
+j  org.eclipse.jetty.webapp.WebAppContext.startWebapp()V+1
+j  org.eclipse.jetty.webapp.WebAppContext.startContext()V+13
+j  org.eclipse.jetty.server.handler.ContextHandler.doStart()V+157
+j  org.eclipse.jetty.servlet.ServletContextHandler.doStart()V+15
+j  org.eclipse.jetty.webapp.WebAppContext.doStart()V+49
+j  org.eclipse.jetty.util.component.AbstractLifeCycle.start()V+31
+j  org.eclipse.jetty.deploy.bindings.StandardStarter.processBinding(Lorg/eclipse/jetty/deploy/graph/Node;Lorg/eclipse/jetty/deploy/App;)V+31
+j  org.eclipse.jetty.deploy.AppLifeCycle.runBindings(Lorg/eclipse/jetty/deploy/graph/Node;Lorg/eclipse/jetty/deploy/App;Lorg/eclipse/jetty/deploy/DeploymentManager;)V+96
+j  org.eclipse.jetty.deploy.DeploymentManager.requestAppGoal(Lorg/eclipse/jetty/deploy/DeploymentManager$AppEntry;Ljava/lang/String;)V+145
+j  org.eclipse.jetty.deploy.DeploymentManager.addApp(Lorg/eclipse/jetty/deploy/App;)V+80
+j  org.eclipse.jetty.deploy.providers.ScanningAppProvider.fileAdded(Ljava/lang/String;)V+56
+j  org.eclipse.jetty.deploy.providers.WebAppProvider.fileAdded(Ljava/lang/String;)V+144
+j  org.eclipse.jetty.deploy.providers.ScanningAppProvider$1.fileAdded(Ljava/lang/String;)V+5
+j  org.eclipse.jetty.util.Scanner.reportAddition(Ljava/lang/String;)V+41
+j  org.eclipse.jetty.util.Scanner.reportDifferences(Ljava/util/Map;Ljava/util/Map;)V+595
+j  org.eclipse.jetty.util.Scanner.scan()V+28
+j  org.eclipse.jetty.util.Scanner.doStart()V+25
+j  org.eclipse.jetty.util.component.AbstractLifeCycle.start()V+31
+j  org.eclipse.jetty.deploy.providers.ScanningAppProvider.doStart()V+293
+j  org.eclipse.jetty.util.component.AbstractLifeCycle.start()V+31
+...<more frames>...
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  sun.misc.Unsafe.defineClass(Ljava/lang/String;[BIILjava/lang/ClassLoader;Ljava/security/ProtectionDomain;)Ljava/lang/Class;+0
+j  sun.reflect.ClassDefiner.defineClass(Ljava/lang/String;[BIILjava/lang/ClassLoader;)Ljava/lang/Class;+27
+j  sun.reflect.MethodAccessorGenerator$1.run()Lsun/reflect/MagicAccessorImpl;+21
+j  sun.reflect.MethodAccessorGenerator$1.run()Ljava/lang/Object;+1
+v  ~StubRoutines::call_stub
+J 1299  java.security.AccessController.doPrivileged(Ljava/security/PrivilegedAction;)Ljava/lang/Object; (0 bytes) @ 0x00007f7aad459d0f [0x00007f7aad459cc0+0x4f]
+j  sun.reflect.MethodAccessorGenerator.generate(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;Ljava/lang/Class;[Ljava/lang/Class;IZZLjava/lang/Class;)Lsun/reflect/MagicAccessorImpl;+755
+j  sun.reflect.MethodAccessorGenerator.generateConstructor(Ljava/lang/Class;[Ljava/lang/Class;[Ljava/lang/Class;I)Lsun/reflect/ConstructorAccessor;+14
+J 1668 C1 sun.reflect.NativeConstructorAccessorImpl.newInstance([Ljava/lang/Object;)Ljava/lang/Object; (89 bytes) @ 0x00007f7aad582a3f [0x00007f7aad582800+0x23f]
+J 6474 C1 sun.reflect.DelegatingConstructorAccessorImpl.newInstance([Ljava/lang/Object;)Ljava/lang/Object; (9 bytes) @ 0x00007f7aae029303 [0x00007f7aae029200+0x103]
+J 6433 C1 java.lang.reflect.Constructor.newInstance([Ljava/lang/Object;)Ljava/lang/Object; (87 bytes) @ 0x00007f7aad170472 [0x00007f7aad16ffc0+0x4b2]
+J 7185 C1 org.geoserver.config.util.SecureXStream.registerConverterDynamically(Ljava/lang/String;I[Ljava/lang/Class;[Ljava/lang/Object;)V (136 bytes) @ 0x00007f7aae2e0ee4 [0x00007f7aae2e0e00+0xe4]
+j  org.geoserver.config.util.SecureXStream.setupConverters()V+949
+j  com.thoughtworks.xstream.XStream.<init>(Lcom/thoughtworks/xstream/converters/reflection/ReflectionProvider;Lcom/thoughtworks/xstream/io/HierarchicalStreamDriver;Lcom/thoughtworks/xstream/core/ClassLoaderReference;Lcom/thoughtworks/xstream/mapper/Mapper;Lcom/thoughtworks/xstream/converters/ConverterLookup;Lcom/thoughtworks/xstream/converters/ConverterRegistry;)V+74
+j  com.thoughtworks.xstream.XStream.<init>(Lcom/thoughtworks/xstream/converters/reflection/ReflectionProvider;Lcom/thoughtworks/xstream/io/HierarchicalStreamDriver;Lcom/thoughtworks/xstream/core/ClassLoaderReference;Lcom/thoughtworks/xstream/mapper/Mapper;Lcom/thoughtworks/xstream/core/DefaultConverterLookup;)V+24
+j  com.thoughtworks.xstream.XStream.<init>(Lcom/thoughtworks/xstream/converters/reflection/ReflectionProvider;Lcom/thoughtworks/xstream/io/HierarchicalStreamDriver;Ljava/lang/ClassLoader;Lcom/thoughtworks/xstream/mapper/Mapper;)V+20
+j  com.thoughtworks.xstream.XStream.<init>(Lcom/thoughtworks/xstream/converters/reflection/ReflectionProvider;Lcom/thoughtworks/xstream/mapper/Mapper;Lcom/thoughtworks/xstream/io/HierarchicalStreamDriver;)V+11
+j  com.thoughtworks.xstream.XStream.<init>(Lcom/thoughtworks/xstream/converters/reflection/ReflectionProvider;)V+13
+j  org.geoserver.config.util.SecureXStream.<init>(Lcom/thoughtworks/xstream/converters/reflection/ReflectionProvider;)V+2
+j  org.geoserver.config.util.XStreamPersister.<init>(Lcom/thoughtworks/xstream/io/HierarchicalStreamDriver;)V+117
+j  org.geoserver.config.util.XStreamPersisterFactory.buildPersister(Lcom/thoughtworks/xstream/io/HierarchicalStreamDriver;)Lorg/geoserver/config/util/XStreamPersister;+5
+j  org.geoserver.config.util.XStreamPersisterFactory.createXMLPersister()Lorg/geoserver/config/util/XStreamPersister;+2
+j  org.geoserver.config.util.XStreamServiceLoader.load(Lorg/geoserver/config/GeoServer;Lorg/geoserver/platform/resource/Resource;)Lorg/geoserver/config/ServiceInfo;+40
+j  org.geoserver.config.GeoServerLoader.loadServices(Lorg/geoserver/platform/resource/Resource;ZLjava/util/List;Lorg/geoserver/config/GeoServer;)V+35
+j  org.geoserver.config.GeoServerLoader.readConfiguration(Lorg/geoserver/config/GeoServer;Lorg/geoserver/config/util/XStreamPersister;)V+439
+j  org.geoserver.config.DefaultGeoServerLoader.loadGeoServer(Lorg/geoserver/config/GeoServer;Lorg/geoserver/config/util/XStreamPersister;)V+84
+j  org.geoserver.config.GeoServerLoader.postProcessBeforeInitialization(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;+119
+j  org.geoserver.config.GeoServerLoaderProxy.postProcessBeforeInitialization(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;+13
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;+39
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/beans/factory/support/RootBeanDefinition;)Ljava/lang/Object;+49
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;+245
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;+169
+j  org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;+4
+j  org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$88.getObject()Ljava/lang/Object;+16
+j  org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(Ljava/lang/String;Lorg/springframework/beans/factory/ObjectFactory;)Ljava/lang/Object;+132
+j  org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Object;Z)Ljava/lang/Object;+467
+j  org.springframework.beans.factory.support.AbstractBeanFactory.getBean(Ljava/lang/String;)Ljava/lang/Object;+5
+j  org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(Ljava/lang/Object;Lorg/springframework/beans/factory/config/RuntimeBeanReference;)Ljava/lang/Object;+104
+j  org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;+15
+j  org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;Lorg/springframework/beans/BeanWrapper;Lorg/springframework/beans/factory/config/ConstructorArgumentValues;Lorg/springframework/beans/factory/config/ConstructorArgumentValues;)I+298
+j  org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)Lorg/springframework/beans/BeanWrapper;+380
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)Lorg/springframework/beans/BeanWrapper;+13
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Lorg/springframework/beans/BeanWrapper;+221
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;+34
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;+169
+j  org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;+4
+j  org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$88.getObject()Ljava/lang/Object;+16
+j  org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(Ljava/lang/String;Lorg/springframework/beans/factory/ObjectFactory;)Ljava/lang/Object;+132
+j  org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Object;Z)Ljava/lang/Object;+467
+j  org.springframework.beans.factory.support.AbstractBeanFactory.getBean(Ljava/lang/String;)Ljava/lang/Object;+5
+j  org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons()V+248
+j  org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V+124
+j  org.springframework.context.support.AbstractApplicationContext.refresh()V+54
+j  org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(Lorg/springframework/web/context/ConfigurableWebApplicationContext;Ljavax/servlet/ServletContext;)V+135
+j  org.springframework.web.context.ContextLoader.initWebApplicationContext(Ljavax/servlet/ServletContext;)Lorg/springframework/web/context/WebApplicationContext;+132
+j  org.springframework.web.context.ContextLoaderListener.contextInitialized(Ljavax/servlet/ServletContextEvent;)V+5
+j  org.geoserver.platform.GeoServerContextLoaderListener.contextInitialized(Ljavax/servlet/ServletContextEvent;)V+2
+j  org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(Ljavax/servlet/ServletContextListener;Ljavax/servlet/ServletContextEvent;)V+35
+j  org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(Ljavax/servlet/ServletContextListener;Ljavax/servlet/ServletContextEvent;)V+19
+j  org.eclipse.jetty.server.handler.ContextHandler.startContext()V+106
+j  org.eclipse.jetty.servlet.ServletContextHandler.startContext()V+93
+j  org.eclipse.jetty.webapp.WebAppContext.startWebapp()V+1
+j  org.eclipse.jetty.webapp.WebAppContext.startContext()V+13
+j  org.eclipse.jetty.server.handler.ContextHandler.doStart()V+157
+j  org.eclipse.jetty.servlet.ServletContextHandler.doStart()V+15
+j  org.eclipse.jetty.webapp.WebAppContext.doStart()V+49
+j  org.eclipse.jetty.util.component.AbstractLifeCycle.start()V+31
+j  org.eclipse.jetty.deploy.bindings.StandardStarter.processBinding(Lorg/eclipse/jetty/deploy/graph/Node;Lorg/eclipse/jetty/deploy/App;)V+31
+j  org.eclipse.jetty.deploy.AppLifeCycle.runBindings(Lorg/eclipse/jetty/deploy/graph/Node;Lorg/eclipse/jetty/deploy/App;Lorg/eclipse/jetty/deploy/DeploymentManager;)V+96
+j  org.eclipse.jetty.deploy.DeploymentManager.requestAppGoal(Lorg/eclipse/jetty/deploy/DeploymentManager$AppEntry;Ljava/lang/String;)V+145
+j  org.eclipse.jetty.deploy.DeploymentManager.addApp(Lorg/eclipse/jetty/deploy/App;)V+80
+j  org.eclipse.jetty.deploy.providers.ScanningAppProvider.fileAdded(Ljava/lang/String;)V+56
+j  org.eclipse.jetty.deploy.providers.WebAppProvider.fileAdded(Ljava/lang/String;)V+144
+j  org.eclipse.jetty.deploy.providers.ScanningAppProvider$1.fileAdded(Ljava/lang/String;)V+5
+j  org.eclipse.jetty.util.Scanner.reportAddition(Ljava/lang/String;)V+41
+j  org.eclipse.jetty.util.Scanner.reportDifferences(Ljava/util/Map;Ljava/util/Map;)V+595
+j  org.eclipse.jetty.util.Scanner.scan()V+28
+j  org.eclipse.jetty.util.Scanner.doStart()V+25
+j  org.eclipse.jetty.util.component.AbstractLifeCycle.start()V+31
+j  org.eclipse.jetty.deploy.providers.ScanningAppProvider.doStart()V+293
+j  org.eclipse.jetty.util.component.AbstractLifeCycle.start()V+31
+j  org.eclipse.jetty.deploy.DeploymentManager.startAppProvider(Lorg/eclipse/jetty/deploy/AppProvider;)V+8
+j  org.eclipse.jetty.deploy.DeploymentManager.doStart()V+113
+j  org.eclipse.jetty.util.component.AbstractLifeCycle.start()V+31
+j  org.eclipse.jetty.util.component.ContainerLifeCycle.start(Lorg/eclipse/jetty/util/component/LifeCycle;)V+1
+j  org.eclipse.jetty.server.Server.start(Lorg/eclipse/jetty/util/component/LifeCycle;)V+9
+j  org.eclipse.jetty.util.component.ContainerLifeCycle.doStart()V+149
+j  org.eclipse.jetty.server.handler.AbstractHandler.doStart()V+55
+j  org.eclipse.jetty.server.Server.doStart()V+203
+j  org.eclipse.jetty.util.component.AbstractLifeCycle.start()V+31
+j  org.eclipse.jetty.xml.XmlConfiguration$1.run()Ljava/lang/Void;+407
+j  org.eclipse.jetty.xml.XmlConfiguration$1.run()Ljava/lang/Object;+1
+v  ~StubRoutines::call_stub
+j  java.security.AccessController.doPrivileged(Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;+0
+j  org.eclipse.jetty.xml.XmlConfiguration.main([Ljava/lang/String;)V+8
+v  ~StubRoutines::call_stub
+j  sun.reflect.NativeMethodAccessorImpl.invoke0(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+0
+j  sun.reflect.NativeMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+100
+j  sun.reflect.DelegatingMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+6
+j  java.lang.reflect.Method.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+56
+j  org.eclipse.jetty.start.Main.invokeMain(Ljava/lang/ClassLoader;Lorg/eclipse/jetty/start/StartArgs;)V+153
+j  org.eclipse.jetty.start.Main.start(Lorg/eclipse/jetty/start/StartArgs;)V+507
+j  org.eclipse.jetty.start.Main.main([Ljava/lang/String;)V+23
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007f7abca2d800 JavaThread "Timer-0" daemon [_thread_blocked, id=3899, stack(0x00007f7a8bb53000,0x00007f7a8bc54000)]
+  0x00007f7abde7d000 JavaThread "GT authority factory disposer" daemon [_thread_blocked, id=3890, stack(0x00007f7a8d786000,0x00007f7a8d887000)]
+  0x00007f7abc946000 JavaThread "mysql-cj-abandoned-connection-cleanup" daemon [_thread_blocked, id=3888, stack(0x00007f7a8da89000,0x00007f7a8db8a000)]
+  0x00007f7abd679000 JavaThread "WeakCollectionCleaner" daemon [_thread_blocked, id=3858, stack(0x00007f7a8ef8e000,0x00007f7a8f08f000)]
+  0x00007f7abd2d4800 JavaThread "Scheduler-1348949648" [_thread_blocked, id=3857, stack(0x00007f7a8f28f000,0x00007f7a8f390000)]
+  0x00007f7abc498800 JavaThread "qtp380936215-19" [_thread_blocked, id=3855, stack(0x00007f7aac5f6000,0x00007f7aac6f7000)]
+  0x00007f7abc496800 JavaThread "qtp380936215-18" [_thread_blocked, id=3854, stack(0x00007f7aac6f7000,0x00007f7aac7f8000)]
+  0x00007f7abc494000 JavaThread "qtp380936215-17" [_thread_blocked, id=3853, stack(0x00007f7aac7f8000,0x00007f7aac8f9000)]
+  0x00007f7abc492800 JavaThread "qtp380936215-16" [_thread_blocked, id=3852, stack(0x00007f7aac8f9000,0x00007f7aac9fa000)]
+  0x00007f7abc490800 JavaThread "qtp380936215-15" [_thread_blocked, id=3851, stack(0x00007f7aac9fa000,0x00007f7aacafb000)]
+  0x00007f7abc48f000 JavaThread "qtp380936215-14" [_thread_blocked, id=3850, stack(0x00007f7aacafb000,0x00007f7aacbfc000)]
+  0x00007f7abc48d000 JavaThread "qtp380936215-13" [_thread_blocked, id=3849, stack(0x00007f7aacbfc000,0x00007f7aaccfd000)]
+  0x00007f7abc48b800 JavaThread "qtp380936215-12" [_thread_blocked, id=3848, stack(0x00007f7aaccfd000,0x00007f7aacdfe000)]
+  0x00007f7abc489800 JavaThread "qtp380936215-11" [_thread_blocked, id=3847, stack(0x00007f7aacdfe000,0x00007f7aaceff000)]
+  0x00007f7abc488000 JavaThread "qtp380936215-10" [_thread_blocked, id=3846, stack(0x00007f7aaceff000,0x00007f7aad000000)]
+  0x00007f7abc478000 JavaThread "ShutdownMonitor" daemon [_thread_in_native, id=3845, stack(0x00007f7ac0032000,0x00007f7ac0133000)]
+  0x00007f7abc0e8000 JavaThread "Service Thread" daemon [_thread_blocked, id=3843, stack(0x00007f7ac0afa000,0x00007f7ac0bfb000)]
+  0x00007f7abc0db000 JavaThread "C1 CompilerThread1" daemon [_thread_in_vm, id=3842, stack(0x00007f7ac0bfc000,0x00007f7ac0cfc000)]
+  0x00007f7abc0d9000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=3841, stack(0x00007f7ac0cfd000,0x00007f7ac0dfd000)]
+  0x00007f7abc0d6000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=3840, stack(0x00007f7ac0dfd000,0x00007f7ac0efe000)]
+  0x00007f7abc0a5800 JavaThread "Finalizer" daemon [_thread_blocked, id=3839, stack(0x00007f7ac11dc000,0x00007f7ac12dd000)]
+  0x00007f7abc0a1000 JavaThread "Reference Handler" daemon [_thread_blocked, id=3838, stack(0x00007f7ac12dd000,0x00007f7ac13de000)]
+=>0x00007f7abc00c000 JavaThread "main" [_thread_in_vm, id=3836, stack(0x00007f7ac5b21000,0x00007f7ac5c21000)]
+
+Other Threads:
+  0x00007f7abc097800 VMThread [stack: 0x00007f7ac13df000,0x00007f7ac14df000] [id=3837]
+  0x00007f7abc0ec000 WatcherThread [stack: 0x00007f7ac09fa000,0x00007f7ac0afa000] [id=3844]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x00000000f0800000, size: 248 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ def new generation   total 22080K, used 6391K [0x00000000f0800000, 0x00000000f1ff0000, 0x00000000f5aa0000)
+  eden space 19648K,  21% used [0x00000000f0800000, 0x00000000f0c205f8, 0x00000000f1b30000)
+  from space 2432K,  89% used [0x00000000f1d90000, 0x00000000f1fad710, 0x00000000f1ff0000)
+  to   space 2432K,   0% used [0x00000000f1b30000, 0x00000000f1b30000, 0x00000000f1d90000)
+ tenured generation   total 48860K, used 35746K [0x00000000f5aa0000, 0x00000000f8a57000, 0x0000000100000000)
+   the space 48860K,  73% used [0x00000000f5aa0000, 0x00000000f7d88bc8, 0x00000000f7d88c00, 0x00000000f8a57000)
+ Metaspace       used 57595K, capacity 59304K, committed 59392K, reserved 1101824K
+  class space    used 6719K, capacity 7082K, committed 7168K, reserved 1048576K
+
+Card table byte_map: [0x00007f7ac5a9b000,0x00007f7ac5b18000] byte_map_base: 0x00007f7ac5317000
+
+Polling page: 0x00007f7ac5c2a000
+
+CodeCache: size=245760Kb used=19482Kb max_used=19494Kb free=226277Kb
+ bounds [0x00007f7aad000000, 0x00007f7aae330000, 0x00007f7abc000000]
+ total_blobs=6697 nmethods=6020 adapters=590
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 85.234 Thread 0x00007f7abc0db000 7239       3       java.util.HashSet::<init> (40 bytes)
+Event: 85.282 Thread 0x00007f7abc0db000 nmethod 7239 0x00007f7aae31a590 code [0x00007f7aae31a780, 0x00007f7aae31ad80]
+Event: 85.287 Thread 0x00007f7abc0db000 7240       3       com.thoughtworks.xstream.XStream::alias (74 bytes)
+Event: 85.737 Thread 0x00007f7abc0d9000 nmethod 7224 0x00007f7aae31db50 code [0x00007f7aae31dce0, 0x00007f7aae31dfe8]
+Event: 85.770 Thread 0x00007f7abc0d9000 7238       4       java.util.HashMap::resize (359 bytes)
+Event: 86.023 Thread 0x00007f7abc0db000 nmethod 7240 0x00007f7aae31e4d0 code [0x00007f7aae31e7c0, 0x00007f7aae320040]
+Event: 86.238 Thread 0x00007f7abc0d9000 nmethod 7238 0x00007f7aae31d110 code [0x00007f7aae31d2c0, 0x00007f7aae31d828]
+Event: 86.245 Thread 0x00007f7abc0d9000 7237       4       java.lang.Class::copyMethods (36 bytes)
+Event: 86.442 Thread 0x00007f7abc0d9000 nmethod 7237 0x00007f7aae31c8d0 code [0x00007f7aae31ca40, 0x00007f7aae31ce18]
+Event: 86.611 Thread 0x00007f7abc0db000 7241       3       java.lang.ClassLoader::checkCreateClassLoader (14 bytes)
+
+GC Heap History (10 events):
+Event: 66.039 GC heap before
+{Heap before GC invocations=196 (full 4):
+ def new generation   total 22080K, used 20026K [0x00000000f0800000, 0x00000000f1ff0000, 0x00000000f5aa0000)
+  eden space 19648K, 100% used [0x00000000f0800000, 0x00000000f1b30000, 0x00000000f1b30000)
+  from space 2432K,  15% used [0x00000000f1b30000, 0x00000000f1b8eaa0, 0x00000000f1d90000)
+  to   space 2432K,   0% used [0x00000000f1d90000, 0x00000000f1d90000, 0x00000000f1ff0000)
+ tenured generation   total 48860K, used 35350K [0x00000000f5aa0000, 0x00000000f8a57000, 0x0000000100000000)
+   the space 48860K,  72% used [0x00000000f5aa0000, 0x00000000f7d25bd0, 0x00000000f7d25c00, 0x00000000f8a57000)
+ Metaspace       used 55809K, capacity 57354K, committed 57600K, reserved 1099776K
+  class space    used 6501K, capacity 6805K, committed 6912K, reserved 1048576K
+Event: 66.128 GC heap after
+Heap after GC invocations=197 (full 4):
+ def new generation   total 22080K, used 568K [0x00000000f0800000, 0x00000000f1ff0000, 0x00000000f5aa0000)
+  eden space 19648K,   0% used [0x00000000f0800000, 0x00000000f0800000, 0x00000000f1b30000)
+  from space 2432K,  23% used [0x00000000f1d90000, 0x00000000f1e1e038, 0x00000000f1ff0000)
+  to   space 2432K,   0% used [0x00000000f1b30000, 0x00000000f1b30000, 0x00000000f1d90000)
+ tenured generation   total 48860K, used 35350K [0x00000000f5aa0000, 0x00000000f8a57000, 0x0000000100000000)
+   the space 48860K,  72% used [0x00000000f5aa0000, 0x00000000f7d25bd0, 0x00000000f7d25c00, 0x00000000f8a57000)
+ Metaspace       used 55809K, capacity 57354K, committed 57600K, reserved 1099776K
+  class space    used 6501K, capacity 6805K, committed 6912K, reserved 1048576K
+}
+Event: 66.953 GC heap before
+{Heap before GC invocations=197 (full 4):
+ def new generation   total 22080K, used 20216K [0x00000000f0800000, 0x00000000f1ff0000, 0x00000000f5aa0000)
+  eden space 19648K, 100% used [0x00000000f0800000, 0x00000000f1b30000, 0x00000000f1b30000)
+  from space 2432K,  23% used [0x00000000f1d90000, 0x00000000f1e1e038, 0x00000000f1ff0000)
+  to   space 2432K,   0% used [0x00000000f1b30000, 0x00000000f1b30000, 0x00000000f1d90000)
+ tenured generation   total 48860K, used 35350K [0x00000000f5aa0000, 0x00000000f8a57000, 0x0000000100000000)
+   the space 48860K,  72% used [0x00000000f5aa0000, 0x00000000f7d25bd0, 0x00000000f7d25c00, 0x00000000f8a57000)
+ Metaspace       used 55835K, capacity 57358K, committed 57600K, reserved 1099776K
+  class space    used 6501K, capacity 6805K, committed 6912K, reserved 1048576K
+Event: 66.966 GC heap after
+Heap after GC invocations=198 (full 4):
+ def new generation   total 22080K, used 500K [0x00000000f0800000, 0x00000000f1ff0000, 0x00000000f5aa0000)
+  eden space 19648K,   0% used [0x00000000f0800000, 0x00000000f0800000, 0x00000000f1b30000)
+  from space 2432K,  20% used [0x00000000f1b30000, 0x00000000f1bad1c0, 0x00000000f1d90000)
+  to   space 2432K,   0% used [0x00000000f1d90000, 0x00000000f1d90000, 0x00000000f1ff0000)
+ tenured generation   total 48860K, used 35350K [0x00000000f5aa0000, 0x00000000f8a57000, 0x0000000100000000)
+   the space 48860K,  72% used [0x00000000f5aa0000, 0x00000000f7d25bd0, 0x00000000f7d25c00, 0x00000000f8a57000)
+ Metaspace       used 55835K, capacity 57358K, committed 57600K, reserved 1099776K
+  class space    used 6501K, capacity 6805K, committed 6912K, reserved 1048576K
+}
+Event: 68.397 GC heap before
+{Heap before GC invocations=198 (full 4):
+ def new generation   total 22080K, used 20148K [0x00000000f0800000, 0x00000000f1ff0000, 0x00000000f5aa0000)
+  eden space 19648K, 100% used [0x00000000f0800000, 0x00000000f1b30000, 0x00000000f1b30000)
+  from space 2432K,  20% used [0x00000000f1b30000, 0x00000000f1bad1c0, 0x00000000f1d90000)
+  to   space 2432K,   0% used [0x00000000f1d90000, 0x00000000f1d90000, 0x00000000f1ff0000)
+ tenured generation   total 48860K, used 35350K [0x00000000f5aa0000, 0x00000000f8a57000, 0x0000000100000000)
+   the space 48860K,  72% used [0x00000000f5aa0000, 0x00000000f7d25bd0, 0x00000000f7d25c00, 0x00000000f8a57000)
+ Metaspace       used 56568K, capacity 58046K, committed 58112K, reserved 1099776K
+  class space    used 6605K, capacity 6903K, committed 6912K, reserved 1048576K
+Event: 68.422 GC heap after
+Heap after GC invocations=199 (full 4):
+ def new generation   total 22080K, used 1447K [0x00000000f0800000, 0x00000000f1ff0000, 0x00000000f5aa0000)
+  eden space 19648K,   0% used [0x00000000f0800000, 0x00000000f0800000, 0x00000000f1b30000)
+  from space 2432K,  59% used [0x00000000f1d90000, 0x00000000f1ef9fd8, 0x00000000f1ff0000)
+  to   space 2432K,   0% used [0x00000000f1b30000, 0x00000000f1b30000, 0x00000000f1d90000)
+ tenured generation   total 48860K, used 35350K [0x00000000f5aa0000, 0x00000000f8a57000, 0x0000000100000000)
+   the space 48860K,  72% used [0x00000000f5aa0000, 0x00000000f7d25bd0, 0x00000000f7d25c00, 0x00000000f8a57000)
+ Metaspace       used 56568K, capacity 58046K, committed 58112K, reserved 1099776K
+  class space    used 6605K, capacity 6903K, committed 6912K, reserved 1048576K
+}
+Event: 79.013 GC heap before
+{Heap before GC invocations=199 (full 4):
+ def new generation   total 22080K, used 21095K [0x00000000f0800000, 0x00000000f1ff0000, 0x00000000f5aa0000)
+  eden space 19648K, 100% used [0x00000000f0800000, 0x00000000f1b30000, 0x00000000f1b30000)
+  from space 2432K,  59% used [0x00000000f1d90000, 0x00000000f1ef9fd8, 0x00000000f1ff0000)
+  to   space 2432K,   0% used [0x00000000f1b30000, 0x00000000f1b30000, 0x00000000f1d90000)
+ tenured generation   total 48860K, used 35350K [0x00000000f5aa0000, 0x00000000f8a57000, 0x0000000100000000)
+   the space 48860K,  72% used [0x00000000f5aa0000, 0x00000000f7d25bd0, 0x00000000f7d25c00, 0x00000000f8a57000)
+ Metaspace       used 57051K, capacity 58560K, committed 58752K, reserved 1101824K
+  class space    used 6643K, capacity 6940K, committed 7040K, reserved 1048576K
+Event: 79.075 GC heap after
+Heap after GC invocations=200 (full 4):
+ def new generation   total 22080K, used 1228K [0x00000000f0800000, 0x00000000f1ff0000, 0x00000000f5aa0000)
+  eden space 19648K,   0% used [0x00000000f0800000, 0x00000000f0800000, 0x00000000f1b30000)
+  from space 2432K,  50% used [0x00000000f1b30000, 0x00000000f1c630b0, 0x00000000f1d90000)
+  to   space 2432K,   0% used [0x00000000f1d90000, 0x00000000f1d90000, 0x00000000f1ff0000)
+ tenured generation   total 48860K, used 35692K [0x00000000f5aa0000, 0x00000000f8a57000, 0x0000000100000000)
+   the space 48860K,  73% used [0x00000000f5aa0000, 0x00000000f7d7b3b8, 0x00000000f7d7b400, 0x00000000f8a57000)
+ Metaspace       used 57051K, capacity 58560K, committed 58752K, reserved 1101824K
+  class space    used 6643K, capacity 6940K, committed 7040K, reserved 1048576K
+}
+Event: 82.603 GC heap before
+{Heap before GC invocations=200 (full 4):
+ def new generation   total 22080K, used 20876K [0x00000000f0800000, 0x00000000f1ff0000, 0x00000000f5aa0000)
+  eden space 19648K, 100% used [0x00000000f0800000, 0x00000000f1b30000, 0x00000000f1b30000)
+  from space 2432K,  50% used [0x00000000f1b30000, 0x00000000f1c630b0, 0x00000000f1d90000)
+  to   space 2432K,   0% used [0x00000000f1d90000, 0x00000000f1d90000, 0x00000000f1ff0000)
+ tenured generation   total 48860K, used 35692K [0x00000000f5aa0000, 0x00000000f8a57000, 0x0000000100000000)
+   the space 48860K,  73% used [0x00000000f5aa0000, 0x00000000f7d7b3b8, 0x00000000f7d7b400, 0x00000000f8a57000)
+ Metaspace       used 57434K, capacity 59068K, committed 59392K, reserved 1101824K
+  class space    used 6696K, capacity 7042K, committed 7168K, reserved 1048576K
+Event: 82.682 GC heap after
+Heap after GC invocations=201 (full 4):
+ def new generation   total 22080K, used 2165K [0x00000000f0800000, 0x00000000f1ff0000, 0x00000000f5aa0000)
+  eden space 19648K,   0% used [0x00000000f0800000, 0x00000000f0800000, 0x00000000f1b30000)
+  from space 2432K,  89% used [0x00000000f1d90000, 0x00000000f1fad710, 0x00000000f1ff0000)
+  to   space 2432K,   0% used [0x00000000f1b30000, 0x00000000f1b30000, 0x00000000f1d90000)
+ tenured generation   total 48860K, used 35746K [0x00000000f5aa0000, 0x00000000f8a57000, 0x0000000100000000)
+   the space 48860K,  73% used [0x00000000f5aa0000, 0x00000000f7d88bc8, 0x00000000f7d88c00, 0x00000000f8a57000)
+ Metaspace       used 57434K, capacity 59068K, committed 59392K, reserved 1101824K
+  class space    used 6696K, capacity 7042K, committed 7168K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 73.367 Thread 0x00007f7abc00c000 Uncommon trap: reason=array_check action=maybe_recompile pc=0x00007f7aae1c26f8 method=java.util.AbstractCollection.toArray([Ljava/lang/Object;)[Ljava/lang/Object; @ 119
+Event: 73.372 Thread 0x00007f7abc00c000 Uncommon trap: reason=array_check action=maybe_recompile pc=0x00007f7aae1c26f8 method=java.util.AbstractCollection.toArray([Ljava/lang/Object;)[Ljava/lang/Object; @ 119
+Event: 73.375 Thread 0x00007f7abc00c000 Uncommon trap: reason=array_check action=maybe_recompile pc=0x00007f7aae1c26f8 method=java.util.AbstractCollection.toArray([Ljava/lang/Object;)[Ljava/lang/Object; @ 119
+Event: 73.607 Thread 0x00007f7abc00c000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f7aadc89404 method=org.xmlpull.mxp1.MXParser.parseStartTag()I @ 443
+Event: 73.612 Thread 0x00007f7abc00c000 Uncommon trap: reason=null_check action=make_not_entrant pc=0x00007f7aae1f0ebc method=com.thoughtworks.xstream.mapper.DefaultImplementationsMapper.defaultImplementationOf(Ljava/lang/Class;)Ljava/lang/Class; @ 23
+Event: 73.613 Thread 0x00007f7abc00c000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f7aae220d9c method=org.xmlpull.mxp1.MXParser.nextImpl()I @ 67
+Event: 78.738 Thread 0x00007f7abc00c000 Uncommon trap: reason=predicate action=maybe_recompile pc=0x00007f7aae1a6f74 method=java.util.TimSort.binarySort([Ljava/lang/Object;IIILjava/util/Comparator;)V @ 76
+Event: 79.084 Thread 0x00007f7abc00c000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f7aad96473c method=java.util.concurrent.ConcurrentHashMap.putVal(Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object; @ 331
+Event: 79.465 Thread 0x00007f7abc00c000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f7aaddee4cc method=java.util.TreeMap.getEntry(Ljava/lang/Object;)Ljava/util/TreeMap$Entry; @ 26
+Event: 79.465 Thread 0x00007f7abc00c000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f7aaddee4cc method=java.util.TreeMap.getEntry(Ljava/lang/Object;)Ljava/util/TreeMap$Entry; @ 26
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 83.846 Thread 0x00007f7abc00c000 Exception <a 'sun/nio/fs/UnixException'> (0x00000000f09efa78) thrown at [/build/openjdk-8-Wt4QLx/openjdk-8-8u312-b07/src/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 83.846 Thread 0x00007f7abc00c000 Exception <a 'sun/nio/fs/UnixException'> (0x00000000f09f2138) thrown at [/build/openjdk-8-Wt4QLx/openjdk-8-8u312-b07/src/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 83.879 Thread 0x00007f7abc00c000 Exception <a 'sun/nio/fs/UnixException'> (0x00000000f09f4b10) thrown at [/build/openjdk-8-Wt4QLx/openjdk-8-8u312-b07/src/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 83.903 Thread 0x00007f7abc00c000 Exception <a 'sun/nio/fs/UnixException'> (0x00000000f09f7068) thrown at [/build/openjdk-8-Wt4QLx/openjdk-8-8u312-b07/src/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 83.965 Thread 0x00007f7abc00c000 Exception <a 'sun/nio/fs/UnixException'> (0x00000000f09f9cb8) thrown at [/build/openjdk-8-Wt4QLx/openjdk-8-8u312-b07/src/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 84.054 Thread 0x00007f7abc00c000 Exception <a 'sun/nio/fs/UnixException'> (0x00000000f09fc350) thrown at [/build/openjdk-8-Wt4QLx/openjdk-8-8u312-b07/src/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 84.090 Thread 0x00007f7abc00c000 Exception <a 'sun/nio/fs/UnixException'> (0x00000000f09fed60) thrown at [/build/openjdk-8-Wt4QLx/openjdk-8-8u312-b07/src/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 84.094 Thread 0x00007f7abc00c000 Exception <a 'sun/nio/fs/UnixException'> (0x00000000f0a012f0) thrown at [/build/openjdk-8-Wt4QLx/openjdk-8-8u312-b07/src/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 84.101 Thread 0x00007f7abc00c000 Exception <a 'sun/nio/fs/UnixException'> (0x00000000f0a03f78) thrown at [/build/openjdk-8-Wt4QLx/openjdk-8-8u312-b07/src/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 84.102 Thread 0x00007f7abc00c000 Exception <a 'sun/nio/fs/UnixException'> (0x00000000f0a06648) thrown at [/build/openjdk-8-Wt4QLx/openjdk-8-8u312-b07/src/hotspot/src/share/vm/prims/jni.cpp, line 711]
+
+Events (10 events):
+Event: 80.091 loading class org/geoserver/config/GeoServerCustomizer done
+Event: 80.305 loading class java/lang/reflect/AnnotatedType
+Event: 80.309 loading class java/lang/reflect/AnnotatedType done
+Event: 80.384 Executing VM operation: RevokeBias
+Event: 80.386 Executing VM operation: RevokeBias done
+Event: 80.386 Thread 0x00007f7abe32b000 Thread exited: 0x00007f7abe32b000
+Event: 80.697 loading class java/rmi/server/UID
+Event: 80.699 loading class java/rmi/server/UID done
+Event: 82.601 Executing VM operation: GenCollectForAllocation
+Event: 82.695 Executing VM operation: GenCollectForAllocation done
+
+
+Dynamic libraries:
+f0800000-f1ff0000 rw-p 00000000 00:00 0 
+f1ff0000-f5aa0000 ---p 00000000 00:00 0 
+f5aa0000-f8a57000 rw-p 00000000 00:00 0 
+f8a57000-100000000 ---p 00000000 00:00 0 
+100000000-100700000 rw-p 00000000 00:00 0 
+100700000-140000000 ---p 00000000 00:00 0 
+55ba4dfc9000-55ba4dfca000 r-xp 00000000 fc:01 281883                     /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+55ba4e1c9000-55ba4e1ca000 r--p 00000000 fc:01 281883                     /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+55ba4e1ca000-55ba4e1cb000 rw-p 00001000 fc:01 281883                     /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+55ba4eb3d000-55ba4eb5e000 rw-p 00000000 00:00 0                          [heap]
+7f7a8b252000-7f7a8b352000 rw-p 00000000 00:00 0 
+7f7a8b392000-7f7a8b455000 ---p 00000000 00:00 0 
+7f7a8b455000-7f7a8b753000 rw-p 00000000 00:00 0 
+7f7a8b753000-7f7a8b953000 rw-p 00000000 00:00 0 
+7f7a8b953000-7f7a8bb53000 rw-p 00000000 00:00 0 
+7f7a8bb53000-7f7a8bb56000 ---p 00000000 00:00 0 
+7f7a8bb56000-7f7a8bc54000 rw-p 00000000 00:00 0 
+7f7a8bc54000-7f7a8bc57000 ---p 00000000 00:00 0 
+7f7a8bc57000-7f7a8bd55000 rw-p 00000000 00:00 0 
+7f7a8bd55000-7f7a8cd55000 r--s 00000000 fc:01 139437                     /tmp/GeoTools/Databases/HSQL/v9.6.0/EPSG.data
+7f7a8cd55000-7f7a8cf55000 rw-p 00000000 00:00 0 
+7f7a8cf55000-7f7a8d155000 rw-p 00000000 00:00 0 
+7f7a8d155000-7f7a8d355000 rw-p 00000000 00:00 0 
+7f7a8d355000-7f7a8d35a000 r--s 002f9000 fc:01 281933                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar
+7f7a8d35a000-7f7a8d55a000 rw-p 00000000 00:00 0 
+7f7a8d55a000-7f7a8d582000 r-xp 00000000 fc:01 281926                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libsunec.so
+7f7a8d582000-7f7a8d781000 ---p 00028000 fc:01 281926                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libsunec.so
+7f7a8d781000-7f7a8d785000 r--p 00027000 fc:01 281926                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libsunec.so
+7f7a8d785000-7f7a8d786000 rw-p 0002b000 fc:01 281926                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libsunec.so
+7f7a8d786000-7f7a8d789000 ---p 00000000 00:00 0 
+7f7a8d789000-7f7a8d887000 rw-p 00000000 00:00 0 
+7f7a8d887000-7f7a8d88a000 ---p 00000000 00:00 0 
+7f7a8d88a000-7f7a8d988000 rw-p 00000000 00:00 0 
+7f7a8d988000-7f7a8d98b000 ---p 00000000 00:00 0 
+7f7a8d98b000-7f7a8da89000 rw-p 00000000 00:00 0 
+7f7a8da89000-7f7a8da8c000 ---p 00000000 00:00 0 
+7f7a8da8c000-7f7a8db8a000 rw-p 00000000 00:00 0 
+7f7a8db8a000-7f7a8db8d000 ---p 00000000 00:00 0 
+7f7a8db8d000-7f7a8dc8b000 rw-p 00000000 00:00 0 
+7f7a8dc8b000-7f7a8dc8e000 ---p 00000000 00:00 0 
+7f7a8dc8e000-7f7a8df8c000 rw-p 00000000 00:00 0 
+7f7a8df8c000-7f7a8df8e000 r--s 00016000 fc:01 281964                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar
+7f7a8df8e000-7f7a8e18e000 rw-p 00000000 00:00 0 
+7f7a8e18e000-7f7a8e38e000 rw-p 00000000 00:00 0 
+7f7a8e38e000-7f7a8e58e000 rw-p 00000000 00:00 0 
+7f7a8e58e000-7f7a8e78e000 rw-p 00000000 00:00 0 
+7f7a8e78e000-7f7a8e98e000 rw-p 00000000 00:00 0 
+7f7a8e98e000-7f7a8eb8e000 rw-p 00000000 00:00 0 
+7f7a8eb8e000-7f7a8ed8e000 rw-p 00000000 00:00 0 
+7f7a8ed8e000-7f7a8ef8e000 rw-p 00000000 00:00 0 
+7f7a8ef8e000-7f7a8ef91000 ---p 00000000 00:00 0 
+7f7a8ef91000-7f7a8f28f000 rw-p 00000000 00:00 0 
+7f7a8f28f000-7f7a8f292000 ---p 00000000 00:00 0 
+7f7a8f292000-7f7a8f590000 rw-p 00000000 00:00 0 
+7f7a8f590000-7f7a8f790000 rw-p 00000000 00:00 0 
+7f7a8f790000-7f7a8f797000 r-xp 00000000 fc:01 281900                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt_headless.so
+7f7a8f797000-7f7a8f996000 ---p 00007000 fc:01 281900                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt_headless.so
+7f7a8f996000-7f7a8f997000 r--p 00006000 fc:01 281900                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt_headless.so
+7f7a8f997000-7f7a8f998000 rw-p 00007000 fc:01 281900                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt_headless.so
+7f7a8f998000-7f7a8fa37000 r-xp 00000000 fc:01 281899                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+7f7a8fa37000-7f7a8fc36000 ---p 0009f000 fc:01 281899                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+7f7a8fc36000-7f7a8fc37000 r--p 0009e000 fc:01 281899                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+7f7a8fc37000-7f7a8fc42000 rw-p 0009f000 fc:01 281899                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+7f7a8fc42000-7f7a8fc67000 rw-p 00000000 00:00 0 
+7f7a8fc67000-7f7a8fc75000 r--s 0008a000 fc:01 540118                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/xstream-1.4.11.1.jar
+7f7a8fc75000-7f7a8fc77000 r--s 00005000 fc:01 540113                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/xpp3_min-1.1.4c.jar
+7f7a8fc77000-7f7a8fc7a000 r--s 0001b000 fc:01 540155                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/xpp3-1.1.3.4.O.jar
+7f7a8fc7a000-7f7a8fc7b000 r--s 00001000 fc:01 540194                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/xmlpull-1.1.3.1.jar
+7f7a8fc7b000-7f7a8fc86000 r--s 00093000 fc:01 540341                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/xmlgraphics-commons-2.2.jar
+7f7a8fc86000-7f7a8fc88000 r--s 00013000 fc:01 540231                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/xml-commons-resolver-1.2.jar
+7f7a8fc88000-7f7a8fc90000 r--s 00028000 fc:01 554397                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/xml-apis-xerces-2.7.1.jar
+7f7a8fc90000-7f7a8fc95000 r--s 00010000 fc:01 540321                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/xml-apis-ext-1.3.04.jar
+7f7a8fc95000-7f7a8fc9e000 r--s 0002d000 fc:01 540221                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/xml-apis-1.4.01.jar
+7f7a8fc9e000-7f7a8fcb7000 r--s 0013a000 fc:01 554396                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/xercesImpl-2.12.0.jar
+7f7a8fcb7000-7f7a8fcdc000 r--s 002de000 fc:01 540294                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/xalan-2.7.2.jar
+7f7a8fcdc000-7f7a8fce0000 r--s 0002a000 fc:01 540144                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/wicketstuff-select2-7.6.0.jar
+7f7a8fce0000-7f7a8fce2000 r--s 00009000 fc:01 540274                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/wicket-webjars-0.5.3.jar
+7f7a8fce2000-7f7a8fceb000 r--s 00054000 fc:01 540318                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/wicket-util-7.6.0.jar
+7f7a8fceb000-7f7a8fcee000 r--s 00013000 fc:01 540103                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/wicket-request-7.6.0.jar
+7f7a8fcee000-7f7a8fcfe000 r--s 00128000 fc:01 540186                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/wicket-extensions-7.6.0.jar
+7f7a8fcfe000-7f7a8fd00000 r--s 00008000 fc:01 540179                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/wicket-dnd-0.7.3.jar
+7f7a8fd00000-7f7a8fd03000 r--s 00038000 fc:01 540329                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/wicket-datetime-7.6.0.jar
+7f7a8fd03000-7f7a8fd2a000 r--s 00217000 fc:01 540287                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/wicket-core-7.6.0.jar
+7f7a8fd2a000-7f7a8fd2c000 r--s 00004000 fc:01 540266                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/uom-lib-common-2.0.jar
+7f7a8fd2c000-7f7a8fd2f000 r--s 00007000 fc:01 540142                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/unit-api-2.0.jar
+7f7a8fd2f000-7f7a8fd32000 r--s 0000f000 fc:01 540078                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/txw2-2.4.0-b180830.0438.jar
+7f7a8fd32000-7f7a8fd33000 r--s 00005000 fc:01 540151                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/systems-common-2.0.1.jar
+7f7a8fd33000-7f7a8fd34000 r--s 00008000 fc:01 540230                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/stax-ex-1.8.jar
+7f7a8fd34000-7f7a8fd36000 r--s 00005000 fc:01 540158                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/stax-api-1.0.1.jar
+7f7a8fd36000-7f7a8fd39000 r--s 00029000 fc:01 540130                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/stax-1.2.0.jar
+7f7a8fd39000-7f7a8fd3e000 r--s 006d5000 fc:01 540270                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/sqlite-jdbc-3.31.1.jar
+7f7a8fd3e000-7f7a8fd4d000 r--s 000b5000 fc:01 540214                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/spring-webmvc-5.1.16.RELEASE.jar
+7f7a8fd4d000-7f7a8fd69000 r--s 0013c000 fc:01 540271                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/spring-web-5.1.16.RELEASE.jar
+7f7a8fd69000-7f7a8fd71000 r--s 00037000 fc:01 540199                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/spring-tx-5.1.16.RELEASE.jar
+7f7a8fd71000-7f7a8fd80000 r--s 00075000 fc:01 540169                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/spring-security-web-5.1.11.RELEASE.jar
+7f7a8fd80000-7f7a8fd83000 r--s 00019000 fc:01 540071                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/spring-security-ldap-5.1.11.RELEASE.jar
+7f7a8fd83000-7f7a8fd8f000 r--s 0005e000 fc:01 540237                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/spring-security-core-5.1.11.RELEASE.jar
+7f7a8fd8f000-7f7a8fd9c000 r--s 000b2000 fc:01 540163                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/spring-security-config-5.1.11.RELEASE.jar
+7f7a8fd9c000-7f7a8fda6000 r--s 00053000 fc:01 540336                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/spring-ldap-core-2.3.2.RELEASE.jar
+7f7a8fda6000-7f7a8fdaf000 r--s 0005a000 fc:01 540297                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/spring-jdbc-5.1.16.RELEASE.jar
+7f7a8fdaf000-7f7a8fdb0000 r--s 00005000 fc:01 540190                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/spring-jcl-5.1.16.RELEASE.jar
+7f7a8fdb0000-7f7a8fdb5000 r--s 00040000 fc:01 540100                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/spring-expression-5.1.16.RELEASE.jar
+7f7a8fdb5000-7f7a8fdce000 r--s 00126000 fc:01 540088                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/spring-core-5.1.16.RELEASE.jar
+7f7a8fdce000-7f7a8fdd3000 r--s 00028000 fc:01 540126                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/spring-context-support-5.1.16.RELEASE.jar
+7f7a8fdd3000-7f7a8fded000 r--s 000f4000 fc:01 540196                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/spring-context-5.1.16.RELEASE.jar
+7f7a8fded000-7f7a8fdfa000 r--s 00099000 fc:01 540238                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/spring-beans-5.1.16.RELEASE.jar
+7f7a8fdfa000-7f7a8fe03000 r--s 00052000 fc:01 540174                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/spring-aop-5.1.16.RELEASE.jar
+7f7a8fe03000-7f7a8fe04000 r--s 00002000 fc:01 540184                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/slf4j-log4j12-1.6.4.jar
+7f7a8fe04000-7f7a8fe06000 r--s 00005000 fc:01 540302                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/slf4j-api-1.6.4.jar
+7f7a8fe06000-7f7a8fe07000 r--s 00004000 fc:01 540289                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/si-units-2.0.1.jar
+7f7a8fe07000-7f7a8fe09000 r--s 00001000 fc:01 540203                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/si-quantity-2.0.1.jar
+7f7a8fe09000-7f7a8fe0d000 r--s 00040000 fc:01 540165                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/serializer-2.7.2.jar
+7f7a8fe0d000-7f7a8fe14000 r--s 0005b000 fc:01 554395                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/print-lib-2.1.5.jar
+7f7a8fe14000-7f7a8fe20000 r--s 000d8000 fc:01 540159                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/postgresql-42.2.14.jar
+7f7a8fe20000-7f7a8fe23000 r--s 00020000 fc:01 540325                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/pngj-2.0.1.jar
+7f7a8fe23000-7f7a8fe27000 r--s 00018000 fc:01 540256                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/picocontainer-1.2.jar
+7f7a8fe27000-7f7a8fe34000 r--s 000a9000 fc:01 540119                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/oshi-core-5.3.3.jar
+7f7a8fe34000-7f7a8fe36000 r--s 0000c000 fc:01 540191                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/org.w3.xlink-24.1.jar
+7f7a8fe36000-7f7a8fe3e000 r--s 000ec000 fc:01 540122                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/org.eclipse.xsd-2.12.0.jar
+7f7a8fe3e000-7f7a8fe42000 r--s 00036000 fc:01 540112                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/org.eclipse.emf.ecore.xmi-2.15.0.jar
+7f7a8fe42000-7f7a8fe56000 r--s 00144000 fc:01 540131                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/org.eclipse.emf.ecore-2.15.0.jar
+7f7a8fe56000-7f7a8fe5d000 r--s 00055000 fc:01 540125                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/org.eclipse.emf.common-2.15.0.jar
+7f7a8fe5d000-7f7a8fe73000 r--s 001c0000 fc:01 540080                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/net.opengis.wmts-24.1.jar
+7f7a8fe73000-7f7a8fe7c000 r--s 0006d000 fc:01 540228                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/net.opengis.wfs-24.1.jar
+7f7a8fe7c000-7f7a8fe88000 r--s 00098000 fc:01 540157                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/net.opengis.wcs-24.1.jar
+7f7a8fe88000-7f7a8fe93000 r--s 00086000 fc:01 540218                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/net.opengis.ows-24.1.jar
+7f7a8fe93000-7f7a8fe98000 r--s 00035000 fc:01 540223                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/net.opengis.fes-24.1.jar
+7f7a8fe98000-7f7a8feb2000 r--s 00230000 fc:01 540951                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/mysql-connector-java-8.0.21.jar
+7f7a8feb2000-7f7a8feb3000 r--s 00003000 fc:01 554393                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/metrics-servlets-3.0.2.jar
+7f7a8feb3000-7f7a8feb4000 r--s 00001000 fc:01 554392                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/metrics-servlet-3.0.2.jar
+7f7a8feb4000-7f7a8feb5000 r--s 00000000 fc:01 554391                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/metrics-log4j-3.0.2.jar
+7f7a8feb5000-7f7a8feb7000 r--s 00006000 fc:01 554390                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/metrics-jvm-3.0.2.jar
+7f7a8feb7000-7f7a8feb8000 r--s 00003000 fc:01 554389                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/metrics-json-3.0.2.jar
+7f7a8feb8000-7f7a8feb9000 r--s 00003000 fc:01 554388                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/metrics-httpclient-3.0.2.jar
+7f7a8feb9000-7f7a8febb000 r--s 00001000 fc:01 554387                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/metrics-healthchecks-3.0.2.jar
+7f7a8febb000-7f7a8febe000 r--s 00012000 fc:01 554386                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/metrics-core-3.0.2.jar
+7f7a8febe000-7f7a8fec4000 r--s 00059000 fc:01 540084                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/mail-1.4.jar
+7f7a8fec4000-7f7a8fecd000 r--s 0006f000 fc:01 540342                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/log4j-1.2.17.jar
+7f7a8fecd000-7f7a8fece000 r--s 00000000 fc:01 540236                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+7f7a8fece000-7f7a8fed0000 r--s 0000d000 fc:01 554384                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jyaml-1.3.jar
+7f7a8fed0000-7f7a8fee0000 r--s 000ca000 fc:01 540269                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jts-core-1.17.1.jar
+7f7a8fee0000-7f7a8fee2000 r--s 00004000 fc:01 540171                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-zonalstats-1.6.0.jar
+7f7a8fee2000-7f7a8fee3000 r--s 00008000 fc:01 540283                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-zonal-1.1.17.jar
+7f7a8fee3000-7f7a8fee5000 r--s 00010000 fc:01 540195                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-warp-1.1.17.jar
+7f7a8fee5000-7f7a8fee6000 r--s 00003000 fc:01 540207                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-vectorize-1.6.0.jar
+7f7a8fee6000-7f7a8fee7000 r--s 00002000 fc:01 540168                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-vectorbinarize-1.6.0.jar
+7f7a8fee7000-7f7a8fee8000 r--s 00004000 fc:01 540117                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-vectorbin-1.1.17.jar
+7f7a8fee8000-7f7a8feec000 r--s 00030000 fc:01 540164                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-utils-1.6.0.jar
+7f7a8feec000-7f7a8fef0000 r--s 0002a000 fc:01 540140                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-utilities-1.1.17.jar
+7f7a8fef0000-7f7a8fef1000 r--s 00002000 fc:01 540137                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-translate-1.1.17.jar
+7f7a8fef1000-7f7a8fef2000 r--s 00008000 fc:01 540260                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-stats-1.1.17.jar
+7f7a8fef2000-7f7a8fef4000 r--s 00008000 fc:01 540076                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-shadedrelief-1.1.17.jar
+7f7a8fef4000-7f7a8fef6000 r--s 00016000 fc:01 540251                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-scale2-1.1.17.jar
+7f7a8fef6000-7f7a8fef7000 r--s 00016000 fc:01 540212                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-scale-1.1.17.jar
+7f7a8fef7000-7f7a8fef8000 r--s 00004000 fc:01 540280                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-rlookup-1.1.17.jar
+7f7a8fef8000-7f7a8fef9000 r--s 00004000 fc:01 540205                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-rescale-1.1.17.jar
+7f7a8fef9000-7f7a8fefb000 r--s 00003000 fc:01 540282                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-rangelookup-1.6.0.jar
+7f7a8fefb000-7f7a8fefd000 r--s 00008000 fc:01 540216                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-piecewise-1.1.17.jar
+7f7a8fefd000-7f7a8fefe000 r--s 00006000 fc:01 540074                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-orderdither-1.1.17.jar
+7f7a8fefe000-7f7a8feff000 r--s 00001000 fc:01 540334                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-nullop-1.1.17.jar
+7f7a8feff000-7f7a8ff00000 r--s 00008000 fc:01 540343                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-mosaic-1.1.17.jar
+7f7a8ff00000-7f7a8ff02000 r--s 00009000 fc:01 540104                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-lookup-1.1.17.jar
+7f7a8ff02000-7f7a8ff04000 r--s 00002000 fc:01 540161                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-jiffle-op-1.1.17.jar
+7f7a8ff04000-7f7a8ff0b000 r--s 0003b000 fc:01 540096                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-jiffle-language-1.1.17.jar
+7f7a8ff0b000-7f7a8ff0d000 r--s 00007000 fc:01 540087                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-iterators-1.1.17.jar
+7f7a8ff0d000-7f7a8ff0f000 r--s 00002000 fc:01 540240                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-imagefunction-1.1.17.jar
+7f7a8ff0f000-7f7a8ff10000 r--s 00001000 fc:01 540153                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-format-1.1.17.jar
+7f7a8ff10000-7f7a8ff11000 r--s 00004000 fc:01 540335                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-errordiffusion-1.1.17.jar
+7f7a8ff11000-7f7a8ff12000 r--s 00002000 fc:01 540134                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-crop-1.1.17.jar
+7f7a8ff12000-7f7a8ff13000 r--s 00006000 fc:01 540106                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-contour-1.6.0.jar
+7f7a8ff13000-7f7a8ff15000 r--s 00004000 fc:01 540135                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-concurrent-tile-cache-1.1.17.jar
+7f7a8ff15000-7f7a8ff16000 r--s 00009000 fc:01 540253                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-colorindexer-1.1.17.jar
+7f7a8ff16000-7f7a8ff18000 r--s 00010000 fc:01 540242                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-colorconvert-1.1.17.jar
+7f7a8ff18000-7f7a8ff19000 r--s 00004000 fc:01 540115                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-classifier-1.1.17.jar
+7f7a8ff19000-7f7a8ff1b000 r--s 00007000 fc:01 540077                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-classbreaks-1.1.17.jar
+7f7a8ff1b000-7f7a8ff1c000 r--s 00004000 fc:01 540147                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-buffer-1.1.17.jar
+7f7a8ff1c000-7f7a8ff1d000 r--s 00003000 fc:01 540219                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-border-1.1.17.jar
+7f7a8ff1d000-7f7a8ff1e000 r--s 00003000 fc:01 540105                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-binarize-1.1.17.jar
+7f7a8ff1e000-7f7a8ff1f000 r--s 00002000 fc:01 540324                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-bandselect-1.1.17.jar
+7f7a8ff1f000-7f7a8ff20000 r--s 00008000 fc:01 540275                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-bandmerge-1.1.17.jar
+7f7a8ff20000-7f7a8ff22000 r--s 00003000 fc:01 540175                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-bandcombine-1.1.17.jar
+7f7a8ff22000-7f7a8ff23000 r--s 00000000 fc:01 540109                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-attributeop-1.6.0.jar
+7f7a8ff23000-7f7a8ff25000 r--s 0000c000 fc:01 540081                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-algebra-1.1.17.jar
+7f7a8ff25000-7f7a8ff27000 r--s 0001d000 fc:01 540314                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jt-affine-1.1.17.jar
+7f7a8ff27000-7f7a8ff2a000 r--s 00006000 fc:01 540120                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jsr305-2.0.3.jar
+7f7a8ff2a000-7f7a8ff2b000 r--s 00005000 fc:01 540129                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/json-simple-1.1.1.jar
+7f7a8ff2b000-7f7a8ff2e000 r--s 0001f000 fc:01 540330                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/json-lib-2.4.2-geoserver.jar
+7f7a8ff2e000-7f7a8ff2f000 r--s 0000f000 fc:01 540148                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/json-20180813.jar
+7f7a8ff2f000-7f7a8ff3f000 r--s 00088000 fc:01 540162                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/joda-time-2.8.1.jar
+7f7a8ff3f000-7f7a8ff5e000 r--s 0027d000 fc:01 540285                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jna-platform-5.6.0.jar
+7f7a8ff5e000-7f7a8ff62000 r--s 0016d000 fc:01 540258                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jna-5.6.0.jar
+7f7a8ff62000-7f7a8ff64000 r--s 00002000 fc:01 540296                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jgridshift-core-1.3.jar
+7f7a8ff64000-7f7a8ff66000 r--s 0000c000 fc:01 540138                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jettison-1.0.1.jar
+7f7a8ff66000-7f7a8ff6c000 r--s 00045000 fc:01 540094                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jdom2-2.0.6.jar
+7f7a8ff6c000-7f7a8ff80000 r--s 000f7000 fc:01 540241                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jaxb-runtime-2.4.0-b180830.0438.jar
+7f7a8ff80000-7f7a8ff84000 r--s 0001c000 fc:01 540299                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jaxb-api-2.4.0-b180830.0359.jar
+7f7a8ff84000-7f7a8ff85000 r--s 00000000 fc:01 540211                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/javax.inject-1.jar
+7f7a8ff85000-7f7a8ff87000 r--s 0000c000 fc:01 540316                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/javax.activation-api-1.2.0.jar
+7f7a8ff87000-7f7a8ff88000 r--s 00004000 fc:01 540136                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jasypt-springsecurity3-1.9.2.jar
+7f7a8ff88000-7f7a8ff8c000 r--s 0001c000 fc:01 540176                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jasypt-1.9.2.jar
+7f7a8ff8c000-7f7a8ff98000 r--s 000b7000 fc:01 540245                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/janino-3.0.8.jar
+7f7a8ff98000-7f7a8ff9a000 r--s 00005000 fc:01 540262                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jakarta.annotation-api-1.3.4.jar
+7f7a8ff9a000-7f7a8ffab000 r--s 00106000 fc:01 540182                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jai_imageio-1.1.jar
+7f7a8ffab000-7f7a8ffbf000 r--s 001bd000 fc:01 540202                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jai_core-1.1.3.jar
+7f7a8ffbf000-7f7a8ffc3000 r--s 0003c000 fc:01 540172                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jai_codec-1.1.3.jar
+7f7a8ffc3000-7f7a8ffc8000 r--s 00051000 fc:01 540198                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/jackson-core-2.10.1.jar
+7f7a8ffc8000-7f7a8ffca000 r--s 00001000 fc:01 540097                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/j2objc-annotations-1.1.jar
+7f7a8ffca000-7f7a8ffe2000 r--s 0021f000 fc:01 554383                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/itextpdf-5.5.13.jar
+7f7a8ffe2000-7f7a8ffee000 r--s 00105000 fc:01 540293                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/itext-2.1.5.jar
+7f7a8ffee000-7f7a8fff0000 r--s 00005000 fc:01 540189                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/istack-commons-runtime-3.0.7.jar
+7f7a8fff0000-7f7a8fff4000 r--s 0003c000 fc:01 540310                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/indriya-2.0.2.jar
+7f7a8fff4000-7f7a8fffd000 r--s 00050000 fc:01 540300                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/imageio-ext-tiff-1.3.2.jar
+7f7a8fffd000-7f7a90000000 r--s 0000b000 fc:01 540281                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/imageio-ext-streams-1.3.2.jar
+7f7a90000000-7f7a90afb000 rw-p 00000000 00:00 0 
+7f7a90afb000-7f7a94000000 ---p 00000000 00:00 0 
+7f7a94000000-7f7a94021000 rw-p 00000000 00:00 0 
+7f7a94021000-7f7a98000000 ---p 00000000 00:00 0 
+7f7a98000000-7f7a98021000 rw-p 00000000 00:00 0 
+7f7a98021000-7f7a9c000000 ---p 00000000 00:00 0 
+7f7a9c000000-7f7a9d3c8000 rw-p 00000000 00:00 0 
+7f7a9d3c8000-7f7aa0000000 ---p 00000000 00:00 0 
+7f7aa0000000-7f7aa0021000 rw-p 00000000 00:00 0 
+7f7aa0021000-7f7aa4000000 ---p 00000000 00:00 0 
+7f7aa4000000-7f7aa4021000 rw-p 00000000 00:00 0 
+7f7aa4021000-7f7aa8000000 ---p 00000000 00:00 0 
+7f7aa8000000-7f7aa814f000 rw-p 00000000 00:00 0 
+7f7aa814f000-7f7aac000000 ---p 00000000 00:00 0 
+7f7aac000000-7f7aac002000 r--s 00009000 fc:01 540301                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/imageio-ext-utilities-1.3.2.jar
+7f7aac002000-7f7aac004000 r--s 00004000 fc:01 540312                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/imageio-ext-png-1.3.2.jar
+7f7aac004000-7f7aac006000 r--s 00005000 fc:01 540263                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/imageio-ext-geocore-1.3.2.jar
+7f7aac006000-7f7aac008000 r--s 00009000 fc:01 540082                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/imageio-ext-arcgrid-1.3.2.jar
+7f7aac008000-7f7aac00f000 r--s 00049000 fc:01 540247                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/httpcore-4.4.10.jar
+7f7aac00f000-7f7aac013000 r--s 00025000 fc:01 540255                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/httpclient-cache-4.5.11.jar
+7f7aac013000-7f7aac020000 r--s 000b1000 fc:01 540208                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/httpclient-4.5.11.jar
+7f7aac020000-7f7aac02e000 r--s 0016d000 fc:01 540200                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/hsqldb-2.4.1.jar
+7f7aac02e000-7f7aac038000 r--s 0011d000 fc:01 540156                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/h2-1.1.119.jar
+7f7aac038000-7f7aac03a000 r--s 00007000 fc:01 540124                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gwc-wmts-1.18.1.jar
+7f7aac03a000-7f7aac03b000 r--s 00010000 fc:01 540250                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gwc-wms-1.18.1.jar
+7f7aac03b000-7f7aac03c000 r--s 00001000 fc:01 540286                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gwc-ve-1.18.1.jar
+7f7aac03c000-7f7aac03d000 r--s 00002000 fc:01 540091                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gwc-tms-1.18.1.jar
+7f7aac03d000-7f7aac03f000 r--s 00010000 fc:01 540254                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gwc-rest-1.18.1.jar
+7f7aac03f000-7f7aac040000 r--s 00005000 fc:01 540099                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gwc-kml-1.18.1.jar
+7f7aac040000-7f7aac042000 r--s 00001000 fc:01 540222                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gwc-gmaps-1.18.1.jar
+7f7aac042000-7f7aac043000 r--s 00008000 fc:01 540215                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gwc-georss-1.18.1.jar
+7f7aac043000-7f7aac045000 r--s 0000c000 fc:01 540315                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gwc-diskquota-jdbc-1.18.1.jar
+7f7aac045000-7f7aac048000 r--s 00015000 fc:01 540079                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gwc-diskquota-core-1.18.1.jar
+7f7aac048000-7f7aac052000 r--s 00124000 fc:01 540225                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gwc-core-1.18.1.jar
+7f7aac052000-7f7aac084000 r--s 0026d000 fc:01 540101                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/guava-27.0-jre.jar
+7f7aac084000-7f7aac086000 r--s 0000c000 fc:01 540206                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-xsd-wmts-24.1.jar
+7f7aac086000-7f7aac08a000 r--s 00027000 fc:01 540116                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-xsd-wfs-24.1.jar
+7f7aac08a000-7f7aac08f000 r--s 00027000 fc:01 540072                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-xsd-wcs-24.1.jar
+7f7aac08f000-7f7aac094000 r--s 00028000 fc:01 540213                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-xsd-sld-24.1.jar
+7f7aac094000-7f7aac098000 r--s 0001c000 fc:01 540209                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-xsd-ows-24.1.jar
+7f7aac098000-7f7aac0b1000 r--s 00167000 fc:01 540246                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-xsd-gml3-24.1.jar
+7f7aac0b1000-7f7aac0b4000 r--s 0001a000 fc:01 540204                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-xsd-gml2-24.1.jar
+7f7aac0b4000-7f7aac0b7000 r--s 00018000 fc:01 540327                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-xsd-filter-24.1.jar
+7f7aac0b7000-7f7aac0ba000 r--s 00010000 fc:01 540229                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-xsd-fes-24.1.jar
+7f7aac0ba000-7f7aac0c0000 r--s 00043000 fc:01 540345                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-xsd-core-24.1.jar
+7f7aac0c0000-7f7aac0cc000 r--s 000b7000 fc:01 540220                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-xml-24.1.jar
+7f7aac0cc000-7f7aac0ce000 r--s 00011000 fc:01 540173                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-wmts-24.1.jar
+7f7aac0ce000-7f7aac0d3000 r--s 00035000 fc:01 540121                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-wms-24.1.jar
+7f7aac0d3000-7f7aac0d8000 r--s 0003a000 fc:01 540185                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-wfs-ng-24.1.jar
+7f7aac0d8000-7f7aac0da000 r--s 00009000 fc:01 540261                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-transform-24.1.jar
+7f7aac0da000-7f7aac0dc000 r--s 00009000 fc:01 540180                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-tile-client-24.1.jar
+7f7aac0dc000-7f7aac0dd000 r--s 00004000 fc:01 540089                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-svg-24.1.jar
+7f7aac0dd000-7f7aac0e1000 r--s 00034000 fc:01 540308                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-shapefile-24.1.jar
+7f7aac0e1000-7f7aac0e9000 r--s 0008c000 fc:01 540127                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-render-24.1.jar
+7f7aac0e9000-7f7aac0f9000 r--s 00159000 fc:01 540234                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-referencing-24.1.jar
+7f7aac0f9000-7f7aac0fb000 r--s 00005000 fc:01 540328                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-property-24.1.jar
+7f7aac0fb000-7f7aac0fe000 r--s 0001c000 fc:01 540267                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-process-raster-24.1.jar
+7f7aac0fe000-7f7aac102000 r--s 0002b000 fc:01 540178                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-process-feature-24.1.jar
+7f7aac102000-7f7aac104000 r--s 0000d000 fc:01 540226                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-process-24.1.jar
+7f7aac104000-7f7aac112000 r--s 0004a000 fc:01 540333                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-opengis-24.1.jar
+7f7aac112000-7f7aac11c000 r--s 0007f000 fc:01 540306                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-metadata-24.1.jar
+7f7aac11c000-7f7aac13b000 r--s 001ce000 fc:01 540193                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-main-24.1.jar
+7f7aac13b000-7f7aac13d000 r--s 00013000 fc:01 540133                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-jdbc-postgis-24.1.jar
+7f7aac13d000-7f7aac13e000 r--s 00005000 fc:01 540952                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-jdbc-mysql-24.1.jar
+7f7aac13e000-7f7aac141000 r--s 00039000 fc:01 540166                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-jdbc-24.1.jar
+7f7aac141000-7f7aac149000 r--s 0007c000 fc:01 540098                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-imagemosaic-24.1.jar
+7f7aac149000-7f7aac14a000 r--s 00005000 fc:01 540303                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-image-24.1.jar
+7f7aac14a000-7f7aac14c000 r--s 00009000 fc:01 540139                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-grid-24.1.jar
+7f7aac14c000-7f7aac14e000 r--s 00007000 fc:01 540295                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-geotiff-24.1.jar
+7f7aac14e000-7f7aac151000 r--s 00023000 fc:01 540340                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-geopkg-24.1.jar
+7f7aac151000-7f7aac154000 r--s 0000e000 fc:01 540188                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-geojson-24.1.jar
+7f7aac154000-7f7aac156000 r--s 00292000 fc:01 540152                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-epsg-hsql-24.1.jar
+7f7aac156000-7f7aac159000 r--s 0002f000 fc:01 540177                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-cql-24.1.jar
+7f7aac159000-7f7aac161000 r--s 00090000 fc:01 540167                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-coverage-24.1.jar
+7f7aac161000-7f7aac164000 r--s 0000e000 fc:01 540323                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-complex-24.1.jar
+7f7aac164000-7f7aac165000 r--s 00005000 fc:01 540092                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-arcgrid-24.1.jar
+7f7aac165000-7f7aac166000 r--s 00003000 fc:01 540235                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gt-app-schema-resolver-24.1.jar
+7f7aac166000-7f7aac173000 r--s 0010f000 fc:01 540344                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-wms-2.18.1.jar
+7f7aac173000-7f7aac180000 r--s 000b0000 fc:01 540224                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-wfs-2.18.1.jar
+7f7aac180000-7f7aac185000 r--s 00041000 fc:01 540309                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-web-wms-2.18.1.jar
+7f7aac185000-7f7aac187000 r--s 00009000 fc:01 540145                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-web-wfs-2.18.1.jar
+7f7aac187000-7f7aac189000 r--s 00011000 fc:01 540339                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-web-wcs-2.18.1.jar
+7f7aac189000-7f7aac18b000 r--s 00007000 fc:01 540197                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-web-sec-ldap-2.18.1.jar
+7f7aac18b000-7f7aac18d000 r--s 00004000 fc:01 540288                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-web-sec-jdbc-2.18.1.jar
+7f7aac18d000-7f7aac19a000 r--s 00080000 fc:01 540128                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-web-sec-core-2.18.1.jar
+7f7aac19a000-7f7aac19c000 r--s 00000000 fc:01 540108                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-web-rest-2.18.1.jar
+7f7aac19c000-7f7aac1a3000 r--s 00056000 fc:01 540239                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-web-gwc-2.18.1.jar
+7f7aac1a3000-7f7aac1a6000 r--s 0005c000 fc:01 540337                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-web-demo-2.18.1.jar
+7f7aac1a6000-7f7aac1c4000 r--s 0017a000 fc:01 540313                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-web-core-2.18.1.jar
+7f7aac1c4000-7f7aac1c9000 r--s 00051000 fc:01 540183                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-wcs2_0-2.18.1.jar
+7f7aac1c9000-7f7aac1cd000 r--s 00020000 fc:01 540114                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-wcs1_1-2.18.1.jar
+7f7aac1cd000-7f7aac1d0000 r--s 0001b000 fc:01 540264                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-wcs1_0-2.18.1.jar
+7f7aac1d0000-7f7aac1d2000 r--s 0000a000 fc:01 540095                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-wcs-2.18.1.jar
+7f7aac1d2000-7f7aac1d5000 r--s 00014000 fc:01 540346                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-sec-ldap-2.18.1.jar
+7f7aac1d5000-7f7aac1d7000 r--s 0000d000 fc:01 540276                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-sec-jdbc-2.18.1.jar
+7f7aac1d7000-7f7aac1d8000 r--s 00001000 fc:01 540317                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-restconfig-wmts-2.18.1.jar
+7f7aac1d8000-7f7aac1d9000 r--s 00001000 fc:01 540232                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-restconfig-wms-2.18.1.jar
+7f7aac1d9000-7f7aac1da000 r--s 00001000 fc:01 540227                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-restconfig-wfs-2.18.1.jar
+7f7aac1da000-7f7aac1db000 r--s 00001000 fc:01 540322                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-restconfig-wcs-2.18.1.jar
+7f7aac1db000-7f7aac1e0000 r--s 0003d000 fc:01 540110                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-restconfig-2.18.1.jar
+7f7aac1e0000-7f7aac1e2000 r--s 00011000 fc:01 540233                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-rest-2.18.1.jar
+7f7aac1e2000-7f7aac1e4000 r--s 00008000 fc:01 554373                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-printing-2.18.1.jar
+7f7aac1e4000-7f7aac1e8000 r--s 0001f000 fc:01 540268                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-platform-2.18.1.jar
+7f7aac1e8000-7f7aac1ec000 r--s 00025000 fc:01 540149                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-ows-2.18.1.jar
+7f7aac1ec000-7f7aac20a000 r--s 001d2000 fc:01 540273                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-main-2.18.1.jar
+7f7aac20a000-7f7aac20e000 r--s 00024000 fc:01 540252                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-kml-2.18.1.jar
+7f7aac20e000-7f7aac211000 r--s 00035000 fc:01 540326                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/gs-gwc-2.18.1.jar
+7f7aac211000-7f7aac212000 r--s 00230000 fc:01 540949                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/geoserver-2.18.1-mysql-plugin.zip
+7f7aac212000-7f7aac222000 r--s 000d2000 fc:01 540278                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/freemarker-2.3.18.jar
+7f7aac222000-7f7aac223000 r--s 00000000 fc:01 540143                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/failureaccess-1.0.jar
+7f7aac223000-7f7aac226000 r--s 00013000 fc:01 540201                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/ezmorph-1.0.6.jar
+7f7aac226000-7f7aac228000 r--s 00002000 fc:01 540332                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/error_prone_annotations-2.2.0.jar
+7f7aac228000-7f7aac22a000 r--s 00008000 fc:01 540265                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/encoder-1.1.jar
+7f7aac22a000-7f7aac22f000 r--s 0004a000 fc:01 540073                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/ejml-ddense-0.34.jar
+7f7aac22f000-7f7aac233000 r--s 00025000 fc:01 540291                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/ejml-core-0.34.jar
+7f7aac233000-7f7aac30a000 r--s 007a9000 fc:01 540075                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/ehcache-2.10.3.jar
+7f7aac30a000-7f7aac30d000 r--s 0001e000 fc:01 540311                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/disruptor-1.2.13.jar
+7f7aac30d000-7f7aac311000 r--s 00029000 fc:01 540319                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/commons-text-1.4.jar
+7f7aac311000-7f7aac314000 r--s 00015000 fc:01 540243                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/commons-pool-1.5.4.jar
+7f7aac314000-7f7aac31c000 r--s 00073000 fc:01 540279                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/commons-lang3-3.8.1.jar
+7f7aac31c000-7f7aac321000 r--s 00040000 fc:01 540146                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/commons-lang-2.5.jar
+7f7aac321000-7f7aac327000 r--s 00044000 fc:01 540217                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/commons-jxpath-1.3.jar
+7f7aac327000-7f7aac32b000 r--s 00031000 fc:01 540307                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/commons-io-2.6.jar
+7f7aac32b000-7f7aac331000 r--s 00045000 fc:01 540304                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/commons-httpclient-3.1.jar
+7f7aac331000-7f7aac334000 r--s 0000f000 fc:01 540284                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/commons-fileupload-1.3.3.jar
+7f7aac334000-7f7aac337000 r--s 00025000 fc:01 540086                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/commons-dbcp-1.4.jar
+7f7aac337000-7f7aac346000 r--s 000a9000 fc:01 540093                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/commons-collections4-4.2.jar
+7f7aac346000-7f7aac353000 r--s 00083000 fc:01 540192                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/commons-collections-3.2.2.jar
+7f7aac353000-7f7aac3ab000 r--s 003a7000 fc:01 540244                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/bcprov-jdk15on-1.60.jar
+7f7aac3ab000-7f7aac5ab000 rw-p 00000000 00:00 0 
+7f7aac5ab000-7f7aac5ad000 r--s 0000d000 fc:01 540259                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/commons-logging-1.1.1.jar
+7f7aac5ad000-7f7aac5af000 r--s 00008000 fc:01 540107                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/commons-compiler-3.0.8.jar
+7f7aac5af000-7f7aac5b6000 r--s 0003a000 fc:01 540290                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/commons-codec-1.9.jar
+7f7aac5b6000-7f7aac5bb000 r--s 00038000 fc:01 540210                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/commons-beanutils-1.9.4.jar
+7f7aac5bb000-7f7aac5c5000 r--s 00026000 fc:01 540132                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/checker-qual-2.5.2.jar
+7f7aac5c5000-7f7aac5c6000 r--s 00005000 fc:01 540141                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/bigint-0.7.1.jar
+7f7aac5c6000-7f7aac5c8000 r--s 00007000 fc:01 540170                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/batik-xml-1.10.jar
+7f7aac5c8000-7f7aac5cb000 r--s 0001d000 fc:01 540298                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/batik-util-1.10.jar
+7f7aac5cb000-7f7aac5ce000 r--s 0001d000 fc:01 540111                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/batik-transcoder-1.10.jar
+7f7aac5ce000-7f7aac5d3000 r--s 00032000 fc:01 540160                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/batik-svggen-1.10.jar
+7f7aac5d3000-7f7aac5d7000 r--s 00035000 fc:01 540154                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/batik-svg-dom-1.10.jar
+7f7aac5d7000-7f7aac5d9000 r--s 00005000 fc:01 540102                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/batik-script-1.10.jar
+7f7aac5d9000-7f7aac5db000 r--s 00011000 fc:01 540305                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/batik-parser-1.10.jar
+7f7aac5db000-7f7aac5de000 r--s 0002c000 fc:01 540338                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/batik-gvt-1.10.jar
+7f7aac5de000-7f7aac5e2000 r--s 00029000 fc:01 540249                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/batik-dom-1.10.jar
+7f7aac5e2000-7f7aac5ea000 r--s 00048000 fc:01 540320                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/batik-css-1.10.jar
+7f7aac5ea000-7f7aac5f6000 r--s 0009f000 fc:01 540085                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/batik-bridge-1.10.jar
+7f7aac5f6000-7f7aac5f9000 ---p 00000000 00:00 0 
+7f7aac5f9000-7f7aac6f7000 rw-p 00000000 00:00 0 
+7f7aac6f7000-7f7aac6fa000 ---p 00000000 00:00 0 
+7f7aac6fa000-7f7aac7f8000 rw-p 00000000 00:00 0 
+7f7aac7f8000-7f7aac7fb000 ---p 00000000 00:00 0 
+7f7aac7fb000-7f7aac8f9000 rw-p 00000000 00:00 0 
+7f7aac8f9000-7f7aac8fc000 ---p 00000000 00:00 0 
+7f7aac8fc000-7f7aac9fa000 rw-p 00000000 00:00 0 
+7f7aac9fa000-7f7aac9fd000 ---p 00000000 00:00 0 
+7f7aac9fd000-7f7aacafb000 rw-p 00000000 00:00 0 
+7f7aacafb000-7f7aacafe000 ---p 00000000 00:00 0 
+7f7aacafe000-7f7aacbfc000 rw-p 00000000 00:00 0 
+7f7aacbfc000-7f7aacbff000 ---p 00000000 00:00 0 
+7f7aacbff000-7f7aaccfd000 rw-p 00000000 00:00 0 
+7f7aaccfd000-7f7aacd00000 ---p 00000000 00:00 0 
+7f7aacd00000-7f7aacdfe000 rw-p 00000000 00:00 0 
+7f7aacdfe000-7f7aace01000 ---p 00000000 00:00 0 
+7f7aace01000-7f7aaceff000 rw-p 00000000 00:00 0 
+7f7aaceff000-7f7aacf02000 ---p 00000000 00:00 0 
+7f7aacf02000-7f7aad000000 rw-p 00000000 00:00 0 
+7f7aad000000-7f7aae330000 rwxp 00000000 00:00 0 
+7f7aae330000-7f7abc000000 ---p 00000000 00:00 0 
+7f7abc000000-7f7abe3a8000 rw-p 00000000 00:00 0 
+7f7abe3a8000-7f7ac0000000 ---p 00000000 00:00 0 
+7f7ac0000000-7f7ac0001000 r--s 00002000 fc:01 540090                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/batik-i18n-1.10.jar
+7f7ac0001000-7f7ac0003000 r--s 00002000 fc:01 540181                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/batik-ext-1.10.jar
+7f7ac0003000-7f7ac0005000 r--s 00001000 fc:01 540292                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/batik-constants-1.10.jar
+7f7ac0005000-7f7ac000d000 r--s 00060000 fc:01 540187                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/batik-awt-util-1.10.jar
+7f7ac000d000-7f7ac0019000 r--s 0006a000 fc:01 540277                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/batik-anim-1.10.jar
+7f7ac0019000-7f7ac0020000 r--s 0004c000 fc:01 540123                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/antlr4-runtime-4.7.1.jar
+7f7ac0020000-7f7ac0021000 r--s 00000000 fc:01 540083                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/animal-sniffer-annotations-1.17.jar
+7f7ac0021000-7f7ac0023000 r--s 0000e000 fc:01 540331                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/activation-1.1.jar
+7f7ac0023000-7f7ac002a000 r--s 00091000 fc:01 540248                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/JavaAPIforKml-2.2.0.jar
+7f7ac002a000-7f7ac002c000 r--s 00008000 fc:01 540272                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/GeographicLib-Java-1.49.jar
+7f7ac002c000-7f7ac0032000 r--s 00047000 fc:01 540150                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/FastInfoset-1.2.15.jar
+7f7ac0032000-7f7ac0035000 ---p 00000000 00:00 0 
+7f7ac0035000-7f7ac0333000 rw-p 00000000 00:00 0 
+7f7ac0333000-7f7ac033c000 r-xp 00000000 fc:01 281919                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7f7ac033c000-7f7ac053b000 ---p 00009000 fc:01 281919                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7f7ac053b000-7f7ac053c000 r--p 00008000 fc:01 281919                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7f7ac053c000-7f7ac053d000 rw-p 00009000 fc:01 281919                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7f7ac053d000-7f7ac053f000 r--s 00017000 fc:01 540847                     /usr/share/geoserver/lib/jetty-servlets-9.4.18.v20190429.jar
+7f7ac053f000-7f7ac0541000 r--s 0000e000 fc:01 540852                     /usr/share/geoserver/lib/jetty-deploy-9.4.18.v20190429.jar
+7f7ac0541000-7f7ac0544000 r--s 0001f000 fc:01 540861                     /usr/share/geoserver/lib/jetty-webapp-9.4.18.v20190429.jar
+7f7ac0544000-7f7ac0546000 r--s 0001c000 fc:01 540845                     /usr/share/geoserver/lib/jetty-servlet-9.4.18.v20190429.jar
+7f7ac0546000-7f7ac0549000 r--s 0001a000 fc:01 540841                     /usr/share/geoserver/lib/jetty-security-9.4.18.v20190429.jar
+7f7ac0549000-7f7ac054d000 r--s 00023000 fc:01 540846                     /usr/share/geoserver/lib/jetty-io-9.4.18.v20190429.jar
+7f7ac054d000-7f7ac0555000 r--s 00079000 fc:01 540854                     /usr/share/geoserver/lib/jetty-util-9.4.18.v20190429.jar
+7f7ac0555000-7f7ac0566000 r--s 001c5000 fc:01 281970                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar
+7f7ac0566000-7f7ac056f000 r--s 00096000 fc:01 540842                     /usr/share/geoserver/lib/jetty-server-9.4.18.v20190429.jar
+7f7ac056f000-7f7ac0572000 r--s 0002f000 fc:01 540856                     /usr/share/geoserver/lib/jetty-http-9.4.18.v20190429.jar
+7f7ac0572000-7f7ac0574000 r--s 0002c000 fc:01 540859                     /usr/share/geoserver/lib/jetty-schemas-3.1.M0.jar
+7f7ac0574000-7f7ac0577000 r--s 00015000 fc:01 540860                     /usr/share/geoserver/lib/javax.servlet-api-3.1.0.jar
+7f7ac0577000-7f7ac0589000 r--s 0034c000 fc:01 281975                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar
+7f7ac0589000-7f7ac05a1000 r-xp 00000000 fc:01 281921                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7f7ac05a1000-7f7ac07a0000 ---p 00018000 fc:01 281921                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7f7ac07a0000-7f7ac07a1000 r--p 00017000 fc:01 281921                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7f7ac07a1000-7f7ac07a2000 rw-p 00018000 fc:01 281921                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7f7ac07a2000-7f7ac07b4000 r-xp 00000000 fc:01 281922                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7f7ac07b4000-7f7ac09b3000 ---p 00012000 fc:01 281922                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7f7ac09b3000-7f7ac09b4000 r--p 00011000 fc:01 281922                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7f7ac09b4000-7f7ac09b5000 rw-p 00012000 fc:01 281922                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7f7ac09b5000-7f7ac09b8000 r--s 00025000 fc:01 540880                     /usr/share/geoserver/start.jar
+7f7ac09b8000-7f7ac09bc000 r--s 00041000 fc:01 281951                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunpkcs11.jar
+7f7ac09bc000-7f7ac09bf000 r--s 0000f000 fc:01 281945                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/icedtea-sound.jar
+7f7ac09bf000-7f7ac09da000 r--s 00394000 fc:01 281943                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/cldrdata.jar
+7f7ac09da000-7f7ac09f5000 r--s 001d6000 fc:01 281948                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/nashorn.jar
+7f7ac09f5000-7f7ac09f7000 r--s 00007000 fc:01 9291                       /usr/share/java/java-atk-wrapper.jar
+7f7ac09f7000-7f7ac09f9000 r--s 00001000 fc:01 281944                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/dnsns.jar
+7f7ac09f9000-7f7ac09fa000 ---p 00000000 00:00 0 
+7f7ac09fa000-7f7ac0afa000 rw-p 00000000 00:00 0 
+7f7ac0afa000-7f7ac0afd000 ---p 00000000 00:00 0 
+7f7ac0afd000-7f7ac0bfb000 rw-p 00000000 00:00 0 
+7f7ac0bfb000-7f7ac0bfc000 ---p 00000000 00:00 0 
+7f7ac0bfc000-7f7ac0bff000 ---p 00000000 00:00 0 
+7f7ac0bff000-7f7ac0cfc000 rw-p 00000000 00:00 0 
+7f7ac0cfc000-7f7ac0cfd000 ---p 00000000 00:00 0 
+7f7ac0cfd000-7f7ac0d00000 ---p 00000000 00:00 0 
+7f7ac0d00000-7f7ac0dfd000 rw-p 00000000 00:00 0 
+7f7ac0dfd000-7f7ac0e00000 ---p 00000000 00:00 0 
+7f7ac0e00000-7f7ac0efe000 rw-p 00000000 00:00 0 
+7f7ac0efe000-7f7ac11dc000 r--p 00000000 fc:01 12476                      /usr/lib/locale/locale-archive
+7f7ac11dc000-7f7ac11df000 ---p 00000000 00:00 0 
+7f7ac11df000-7f7ac12dd000 rw-p 00000000 00:00 0 
+7f7ac12dd000-7f7ac12e0000 ---p 00000000 00:00 0 
+7f7ac12e0000-7f7ac13de000 rw-p 00000000 00:00 0 
+7f7ac13de000-7f7ac13df000 ---p 00000000 00:00 0 
+7f7ac13df000-7f7ac152d000 rw-p 00000000 00:00 0 
+7f7ac152d000-7f7ac16ff000 r--s 03cab000 fc:01 281976                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+7f7ac16ff000-7f7ac1fd0000 rw-p 00000000 00:00 0 
+7f7ac1fd0000-7f7ac201d000 rw-p 00000000 00:00 0 
+7f7ac201d000-7f7ac2390000 ---p 00000000 00:00 0 
+7f7ac2390000-7f7ac2398000 r-xp 00000000 fc:01 281929                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7f7ac2398000-7f7ac2597000 ---p 00008000 fc:01 281929                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7f7ac2597000-7f7ac2598000 r--p 00007000 fc:01 281929                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7f7ac2598000-7f7ac2599000 rw-p 00008000 fc:01 281929                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7f7ac2599000-7f7ac25a4000 r-xp 00000000 fc:01 48902                      /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7f7ac25a4000-7f7ac27a3000 ---p 0000b000 fc:01 48902                      /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7f7ac27a3000-7f7ac27a4000 r--p 0000a000 fc:01 48902                      /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7f7ac27a4000-7f7ac27a5000 rw-p 0000b000 fc:01 48902                      /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7f7ac27a5000-7f7ac27ab000 rw-p 00000000 00:00 0 
+7f7ac27ab000-7f7ac27c2000 r-xp 00000000 fc:01 48875                      /lib/x86_64-linux-gnu/libnsl-2.27.so
+7f7ac27c2000-7f7ac29c1000 ---p 00017000 fc:01 48875                      /lib/x86_64-linux-gnu/libnsl-2.27.so
+7f7ac29c1000-7f7ac29c2000 r--p 00016000 fc:01 48875                      /lib/x86_64-linux-gnu/libnsl-2.27.so
+7f7ac29c2000-7f7ac29c3000 rw-p 00017000 fc:01 48875                      /lib/x86_64-linux-gnu/libnsl-2.27.so
+7f7ac29c3000-7f7ac29c5000 rw-p 00000000 00:00 0 
+7f7ac29c5000-7f7ac29d0000 r-xp 00000000 fc:01 48904                      /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7f7ac29d0000-7f7ac2bcf000 ---p 0000b000 fc:01 48904                      /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7f7ac2bcf000-7f7ac2bd0000 r--p 0000a000 fc:01 48904                      /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7f7ac2bd0000-7f7ac2bd1000 rw-p 0000b000 fc:01 48904                      /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7f7ac2bd1000-7f7ac2bd9000 r-xp 00000000 fc:01 48900                      /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7f7ac2bd9000-7f7ac2dd9000 ---p 00008000 fc:01 48900                      /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7f7ac2dd9000-7f7ac2dda000 r--p 00008000 fc:01 48900                      /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7f7ac2dda000-7f7ac2ddb000 rw-p 00009000 fc:01 48900                      /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7f7ac2ddb000-7f7ac2e05000 r-xp 00000000 fc:01 281910                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7f7ac2e05000-7f7ac3005000 ---p 0002a000 fc:01 281910                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7f7ac3005000-7f7ac3006000 r--p 0002a000 fc:01 281910                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7f7ac3006000-7f7ac3008000 rw-p 0002b000 fc:01 281910                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7f7ac3008000-7f7ac3018000 r-xp 00000000 fc:01 281928                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7f7ac3018000-7f7ac3217000 ---p 00010000 fc:01 281928                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7f7ac3217000-7f7ac3219000 r--p 0000f000 fc:01 281928                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7f7ac3219000-7f7ac321a000 rw-p 00011000 fc:01 281928                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7f7ac321a000-7f7ac3221000 r-xp 00000000 fc:01 48909                      /lib/x86_64-linux-gnu/librt-2.27.so
+7f7ac3221000-7f7ac3420000 ---p 00007000 fc:01 48909                      /lib/x86_64-linux-gnu/librt-2.27.so
+7f7ac3420000-7f7ac3421000 r--p 00006000 fc:01 48909                      /lib/x86_64-linux-gnu/librt-2.27.so
+7f7ac3421000-7f7ac3422000 rw-p 00007000 fc:01 48909                      /lib/x86_64-linux-gnu/librt-2.27.so
+7f7ac3422000-7f7ac3439000 r-xp 00000000 fc:01 14056                      /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f7ac3439000-7f7ac3638000 ---p 00017000 fc:01 14056                      /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f7ac3638000-7f7ac3639000 r--p 00016000 fc:01 14056                      /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f7ac3639000-7f7ac363a000 rw-p 00017000 fc:01 14056                      /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f7ac363a000-7f7ac37d7000 r-xp 00000000 fc:01 48872                      /lib/x86_64-linux-gnu/libm-2.27.so
+7f7ac37d7000-7f7ac39d6000 ---p 0019d000 fc:01 48872                      /lib/x86_64-linux-gnu/libm-2.27.so
+7f7ac39d6000-7f7ac39d7000 r--p 0019c000 fc:01 48872                      /lib/x86_64-linux-gnu/libm-2.27.so
+7f7ac39d7000-7f7ac39d8000 rw-p 0019d000 fc:01 48872                      /lib/x86_64-linux-gnu/libm-2.27.so
+7f7ac39d8000-7f7ac3b51000 r-xp 00000000 fc:01 11844                      /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7f7ac3b51000-7f7ac3d51000 ---p 00179000 fc:01 11844                      /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7f7ac3d51000-7f7ac3d5b000 r--p 00179000 fc:01 11844                      /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7f7ac3d5b000-7f7ac3d5d000 rw-p 00183000 fc:01 11844                      /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7f7ac3d5d000-7f7ac3d61000 rw-p 00000000 00:00 0 
+7f7ac3d61000-7f7ac4ad2000 r-xp 00000000 fc:01 281932                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7f7ac4ad2000-7f7ac4cd2000 ---p 00d71000 fc:01 281932                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7f7ac4cd2000-7f7ac4d68000 r--p 00d71000 fc:01 281932                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7f7ac4d68000-7f7ac4d91000 rw-p 00e07000 fc:01 281932                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7f7ac4d91000-7f7ac4dc4000 rw-p 00000000 00:00 0 
+7f7ac4dc4000-7f7ac4dde000 r-xp 00000000 fc:01 48907                      /lib/x86_64-linux-gnu/libpthread-2.27.so
+7f7ac4dde000-7f7ac4fdd000 ---p 0001a000 fc:01 48907                      /lib/x86_64-linux-gnu/libpthread-2.27.so
+7f7ac4fdd000-7f7ac4fde000 r--p 00019000 fc:01 48907                      /lib/x86_64-linux-gnu/libpthread-2.27.so
+7f7ac4fde000-7f7ac4fdf000 rw-p 0001a000 fc:01 48907                      /lib/x86_64-linux-gnu/libpthread-2.27.so
+7f7ac4fdf000-7f7ac4fe3000 rw-p 00000000 00:00 0 
+7f7ac4fe3000-7f7ac4fe6000 r-xp 00000000 fc:01 48871                      /lib/x86_64-linux-gnu/libdl-2.27.so
+7f7ac4fe6000-7f7ac51e5000 ---p 00003000 fc:01 48871                      /lib/x86_64-linux-gnu/libdl-2.27.so
+7f7ac51e5000-7f7ac51e6000 r--p 00002000 fc:01 48871                      /lib/x86_64-linux-gnu/libdl-2.27.so
+7f7ac51e6000-7f7ac51e7000 rw-p 00003000 fc:01 48871                      /lib/x86_64-linux-gnu/libdl-2.27.so
+7f7ac51e7000-7f7ac5203000 r-xp 00000000 fc:01 1957                       /lib/x86_64-linux-gnu/libz.so.1.2.11
+7f7ac5203000-7f7ac5402000 ---p 0001c000 fc:01 1957                       /lib/x86_64-linux-gnu/libz.so.1.2.11
+7f7ac5402000-7f7ac5403000 r--p 0001b000 fc:01 1957                       /lib/x86_64-linux-gnu/libz.so.1.2.11
+7f7ac5403000-7f7ac5404000 rw-p 0001c000 fc:01 1957                       /lib/x86_64-linux-gnu/libz.so.1.2.11
+7f7ac5404000-7f7ac55eb000 r-xp 00000000 fc:01 48868                      /lib/x86_64-linux-gnu/libc-2.27.so
+7f7ac55eb000-7f7ac57eb000 ---p 001e7000 fc:01 48868                      /lib/x86_64-linux-gnu/libc-2.27.so
+7f7ac57eb000-7f7ac57ef000 r--p 001e7000 fc:01 48868                      /lib/x86_64-linux-gnu/libc-2.27.so
+7f7ac57ef000-7f7ac57f1000 rw-p 001eb000 fc:01 48868                      /lib/x86_64-linux-gnu/libc-2.27.so
+7f7ac57f1000-7f7ac57f5000 rw-p 00000000 00:00 0 
+7f7ac57f5000-7f7ac5803000 r-xp 00000000 fc:01 281896                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/jli/libjli.so
+7f7ac5803000-7f7ac5a02000 ---p 0000e000 fc:01 281896                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/jli/libjli.so
+7f7ac5a02000-7f7ac5a03000 r--p 0000d000 fc:01 281896                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/jli/libjli.so
+7f7ac5a03000-7f7ac5a04000 rw-p 0000e000 fc:01 281896                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/jli/libjli.so
+7f7ac5a04000-7f7ac5a2d000 r-xp 00000000 fc:01 48864                      /lib/x86_64-linux-gnu/ld-2.27.so
+7f7ac5a2d000-7f7ac5a2e000 r--s 0000e000 fc:01 540853                     /usr/share/geoserver/lib/jetty-xml-9.4.18.v20190429.jar
+7f7ac5a2e000-7f7ac5a39000 r--s 00116000 fc:01 281947                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/localedata.jar
+7f7ac5a39000-7f7ac5a3b000 r--s 00010000 fc:01 281952                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/zipfs.jar
+7f7ac5a3b000-7f7ac5a3d000 r--s 00008000 fc:01 281949                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunec.jar
+7f7ac5a3d000-7f7ac5a43000 r--s 0003d000 fc:01 281950                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunjce_provider.jar
+7f7ac5a43000-7f7ac5a44000 r--s 0000a000 fc:01 281946                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jaccess.jar
+7f7ac5a44000-7f7ac5a48000 r--s 0004a000 fc:01 540257                     /usr/share/geoserver/webapps/geoserver/WEB-INF/lib/marlin-0.9.3.jar
+7f7ac5a48000-7f7ac5a60000 rw-p 00000000 00:00 0 
+7f7ac5a60000-7f7ac5a9b000 ---p 00000000 00:00 0 
+7f7ac5a9b000-7f7ac5aa7000 rw-p 00000000 00:00 0 
+7f7ac5aa7000-7f7ac5ac4000 ---p 00000000 00:00 0 
+7f7ac5ac4000-7f7ac5add000 rw-p 00000000 00:00 0 
+7f7ac5add000-7f7ac5b17000 ---p 00000000 00:00 0 
+7f7ac5b17000-7f7ac5b18000 rw-p 00000000 00:00 0 
+7f7ac5b18000-7f7ac5b20000 rw-s 00000000 fc:01 139441                     /tmp/hsperfdata_root/3830
+7f7ac5b20000-7f7ac5b21000 ---p 00000000 00:00 0 
+7f7ac5b21000-7f7ac5b24000 ---p 00000000 00:00 0 
+7f7ac5b24000-7f7ac5c23000 rw-p 00000000 00:00 0 
+7f7ac5c23000-7f7ac5c29000 r--s 000d3000 fc:01 281969                     /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar
+7f7ac5c29000-7f7ac5c2a000 rw-p 00000000 00:00 0 
+7f7ac5c2a000-7f7ac5c2b000 r--p 00000000 00:00 0 
+7f7ac5c2b000-7f7ac5c2d000 rw-p 00000000 00:00 0 
+7f7ac5c2d000-7f7ac5c2e000 r--p 00029000 fc:01 48864                      /lib/x86_64-linux-gnu/ld-2.27.so
+7f7ac5c2e000-7f7ac5c2f000 rw-p 0002a000 fc:01 48864                      /lib/x86_64-linux-gnu/ld-2.27.so
+7f7ac5c2f000-7f7ac5c30000 rw-p 00000000 00:00 0 
+7fff0933a000-7fff0935b000 rw-p 00000000 00:00 0                          [stack]
+7fff0937a000-7fff0937d000 r--p 00000000 00:00 0                          [vvar]
+7fff0937d000-7fff0937f000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Xbootclasspath/a:/usr/share/geoserver/webapps/geoserver/WEB-INF/lib/marlin-0.9.3.jar -Dsun.java2d.renderer=org.marlin.pisces.MarlinRenderingEngine -DGEOSERVER_DATA_DIR=/usr/share/geoserver/data_dir -Djava.awt.headless=true -DSTOP.PORT=8079 -DSTOP.KEY=geoserver 
+java_command: start.jar
+java_class_path (initial): start.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+SHELL=/bin/bash
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xb6f390], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xb6f390], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x98ec90], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x98ec90], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x98ec90], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x98ec90], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x98eb40], sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: [libjvm.so+0x98f1b0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGINT: [libjvm.so+0x98f1b0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGTERM: [libjvm.so+0x98f1b0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGQUIT: [libjvm.so+0x98f1b0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=18.04
+DISTRIB_CODENAME=bionic
+DISTRIB_DESCRIPTION="Ubuntu 18.04.6 LTS"
+
+uname:Linux 4.15.0-184-generic #194-Ubuntu SMP Thu Jun 2 18:54:48 UTC 2022 x86_64
+libc:glibc 2.27 NPTL 2.27 
+rlimit: STACK 8192k, CORE 0k, NPROC 3853, NOFILE 1048576, AS infinity
+load average:3.16 1.30 0.77
+
+/proc/meminfo:
+MemTotal:        1008632 kB
+MemFree:           48968 kB
+MemAvailable:          0 kB
+Buffers:             352 kB
+Cached:             6364 kB
+SwapCached:          588 kB
+Active:           442932 kB
+Inactive:         443268 kB
+Active(anon):     439832 kB
+Inactive(anon):   439984 kB
+Active(file):       3100 kB
+Inactive(file):     3284 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       1048572 kB
+SwapFree:              0 kB
+Dirty:                20 kB
+Writeback:             8 kB
+AnonPages:        879364 kB
+Mapped:             5132 kB
+Shmem:               300 kB
+Slab:              37740 kB
+SReclaimable:      16572 kB
+SUnreclaim:        21168 kB
+KernelStack:        4352 kB
+PageTables:        19016 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1552888 kB
+Committed_AS:    2353352 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      122736 kB
+DirectMap2M:      925696 kB
+
+container (cgroup) information:
+container_type: cgroupv1
+cpu_cpuset_cpus: 0
+cpu_memory_nodes: 0
+active_processor_count: 1
+cpu_quota: -1
+cpu_period: 100000
+cpu_shares: -1
+memory_limit_in_bytes: -1
+memory_and_swap_limit_in_bytes: -2
+memory_soft_limit_in_bytes: -1
+memory_usage_in_bytes: 907177984
+memory_max_usage_in_bytes: 0
+
+
+CPU:total 1 (initial active 1) (1 cores per cpu, 1 threads per core) family 6 model 13 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, tsc
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 13
+model name	: QEMU Virtual CPU version 2.5+
+stepping	: 3
+microcode	: 0x1
+cpu MHz		: 1698.033
+cache size	: 16384 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pse36 clflush mmx fxsr sse sse2 syscall nx lm rep_good nopl xtopology cpuid tsc_known_freq pni cx16 x2apic hypervisor lahf_lm pti
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 3396.06
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 1008632k(49068k free), swap 1048572k(0k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.312-b07) for linux-amd64 JRE (1.8.0_312-8u312-b07-0ubuntu1~18.04-b07), built on Nov  3 2021 13:54:59 by "buildd" with gcc 7.5.0
+
+time: Sun Sep  4 15:30:40 2022
+timezone: WIB
+elapsed time: 86.952556 seconds (0d 0h 1m 26s)
+

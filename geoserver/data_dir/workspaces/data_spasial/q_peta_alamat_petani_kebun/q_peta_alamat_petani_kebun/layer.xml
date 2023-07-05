@@ -1,0 +1,22 @@
+<layer>
+  <name>q_peta_alamat_petani_kebun</name>
+  <id>LayerInfoImpl--5706e53b:1814c6b2c20:-4e85</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fdf</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-37b18cc6:14d5d036d48:-8000</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--5706e53b:1814c6b2c20:-4e86</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-06-10 15:33:21.814 UTC</dateCreated>
+  <dateModified>2022-06-11 05:47:50.297 UTC</dateModified>
+</layer>

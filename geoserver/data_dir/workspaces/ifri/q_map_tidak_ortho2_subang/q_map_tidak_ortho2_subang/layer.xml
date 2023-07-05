@@ -1,0 +1,22 @@
+<layer>
+  <name>q_map_tidak_ortho2_subang</name>
+  <id>LayerInfoImpl-268eb811:1830224494d:-474a</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-268eb811:182b6d98862:4b25</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-268eb811:182b6d98862:4b25</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-268eb811:1830224494d:-474b</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-09-03 20:05:42.140 UTC</dateCreated>
+  <dateModified>2022-09-03 20:16:56.504 UTC</dateModified>
+</layer>

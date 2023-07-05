@@ -1,0 +1,44 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-268eb811:1830224494d:-475a</id>
+  <name>q_map_cukup_ortho2_purwo</name>
+  <nativeName>q_map_cukup_ortho2_purwo</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-268eb811:182e49bbebd:-1698</id>
+  </namespace>
+  <title>q_map_cukup_ortho2_purwo</title>
+  <keywords>
+    <string>features</string>
+    <string>q_map_cukup_ortho2_purwo</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>109.9810921433</minx>
+    <maxx>109.9869096356</maxx>
+    <miny>-7.8066373543</miny>
+    <maxy>-7.804095094</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>109.9810921433</minx>
+    <maxx>109.9869096356</maxx>
+    <miny>-7.8066373543</miny>
+    <maxy>-7.804095094</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-268eb811:1830224494d:-475b</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

@@ -1,0 +1,41 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--5706e53b:1814c6b2c20:-71e4</id>
+  <name>q_data_spasial_tanahlaut_landsys</name>
+  <nativeName>q_data_spasial_tanahlaut_landsys</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--5706e53b:180d00789a2:-2d0c</id>
+  </namespace>
+  <title>Landsystem Tanah Laut</title>
+  <keywords>
+    <string>features</string>
+    <string>q_data_spasial_tanahlaut_landsys</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>-1.0</minx>
+    <maxx>0.0</maxx>
+    <miny>-1.0</miny>
+    <maxy>0.0</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.0</minx>
+    <maxx>0.0</maxx>
+    <miny>-1.0</miny>
+    <maxy>0.0</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--5706e53b:180d00789a2:-2d0b</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

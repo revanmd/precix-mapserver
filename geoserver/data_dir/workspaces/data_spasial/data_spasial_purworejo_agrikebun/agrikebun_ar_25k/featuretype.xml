@@ -1,0 +1,44 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-665bd1f:17e9f01d1c5:-7c3b</id>
+  <name>agrikebun_ar_25k</name>
+  <nativeName>agrikebun_ar_25k</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-665bd1f:17e9f01d1c5:-7c4a</id>
+  </namespace>
+  <title>Agri Kebun</title>
+  <keywords>
+    <string>features</string>
+    <string>agrikebun_ar_25k</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>109.798141494</minx>
+    <maxx>110.14354709</maxx>
+    <miny>-7.89075889500001</miny>
+    <maxy>-7.51768605299984</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>109.798141494</minx>
+    <maxx>110.14354709</maxx>
+    <miny>-7.89075889500001</miny>
+    <maxy>-7.51768605299984</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-665bd1f:17e9f01d1c5:-7c3c</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

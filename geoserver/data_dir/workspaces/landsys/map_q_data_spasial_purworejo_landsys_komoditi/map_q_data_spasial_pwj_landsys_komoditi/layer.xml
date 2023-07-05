@@ -1,0 +1,26 @@
+<layer>
+  <name>map_q_data_spasial_pwj_landsys_komoditi</name>
+  <id>LayerInfoImpl-1d6703e9:17ef269489a:47d2</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-665bd1f:17e9f01d1c5:-7be9</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--570ae188:124761b8d78:-7fe0</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-37b18cc6:14d5d036d48:-8000</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-1d6703e9:17ef269489a:47d1</id>
+  </resource>
+  <opaque>false</opaque>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-02-14 09:16:04.930 UTC</dateCreated>
+  <dateModified>2022-02-14 13:08:55.703 UTC</dateModified>
+</layer>

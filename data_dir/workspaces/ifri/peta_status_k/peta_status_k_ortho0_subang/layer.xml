@@ -1,0 +1,22 @@
+<layer>
+  <name>peta_status_k_ortho0_subang</name>
+  <id>LayerInfoImpl-145d3c3f:183bdd955ac:-6d6</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-145d3c3f:183bd00fa9f:-7fd3</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-145d3c3f:183bd00fa9f:-7fd3</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-145d3c3f:183bdd955ac:-6d7</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-10-09 17:45:44.496 UTC</dateCreated>
+  <dateModified>2022-10-09 17:46:04.706 UTC</dateModified>
+</layer>

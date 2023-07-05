@@ -1,0 +1,22 @@
+<layer>
+  <name>sawah_subang_ortho_0</name>
+  <id>LayerInfoImpl-3010d686:183bf5a08b4:-32d4</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-145d3c3f:183bd00fa9f:-7ffe</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-145d3c3f:183bd00fa9f:-7ffe</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-3010d686:183bf5a08b4:-32d5</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-10-10 00:52:06.295 UTC</dateCreated>
+  <dateModified>2022-10-10 00:52:39.208 UTC</dateModified>
+</layer>

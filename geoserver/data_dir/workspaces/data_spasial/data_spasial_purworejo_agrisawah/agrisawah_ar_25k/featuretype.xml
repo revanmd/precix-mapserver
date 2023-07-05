@@ -1,0 +1,44 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-665bd1f:17e9f01d1c5:-7c41</id>
+  <name>agrisawah_ar_25k</name>
+  <nativeName>agrisawah_ar_25k</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-665bd1f:17e9f01d1c5:-7c4a</id>
+  </namespace>
+  <title>Agri Sawah</title>
+  <keywords>
+    <string>features</string>
+    <string>agrisawah_ar_25k</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>109.798065207</minx>
+    <maxx>110.134723045</maxx>
+    <miny>-7.89376265285529</miny>
+    <maxy>-7.52988960299992</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>109.798065207</minx>
+    <maxx>110.134723045</maxx>
+    <miny>-7.89376265285529</miny>
+    <maxy>-7.52988960299992</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-665bd1f:17e9f01d1c5:-7c42</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

@@ -1,0 +1,25 @@
+<layer>
+  <name>sawah_sukamandi_ortho1</name>
+  <id>LayerInfoImpl--398f8ad:1830afefc3c:290e</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe3</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--570ae188:124761b8d78:-7fe0</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--570ae188:124761b8d78:-7fe3</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--398f8ad:1830afefc3c:290d</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-09-05 01:50:09.176 UTC</dateCreated>
+  <dateModified>2022-09-05 01:51:36.901 UTC</dateModified>
+</layer>

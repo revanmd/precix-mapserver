@@ -1,0 +1,22 @@
+<layer>
+  <name>peta_status_k_ortho1_sragen</name>
+  <id>LayerInfoImpl-145d3c3f:183bde1d1d3:-1204</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-145d3c3f:183bd00fa9f:-7fd3</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-145d3c3f:183bd00fa9f:-7fd3</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-145d3c3f:183bde1d1d3:-1205</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-10-09 17:56:32.582 UTC</dateCreated>
+  <dateModified>2022-10-09 17:56:57.711 UTC</dateModified>
+</layer>

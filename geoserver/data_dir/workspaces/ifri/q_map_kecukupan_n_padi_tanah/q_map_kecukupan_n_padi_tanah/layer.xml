@@ -1,0 +1,22 @@
+<layer>
+  <name>q_map_kecukupan_n_padi_tanah</name>
+  <id>LayerInfoImpl-268eb811:18306521b38:-3fb</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fdf</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--570ae188:124761b8d78:-7fdf</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-268eb811:18306521b38:-3fc</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-09-04 06:00:56.601 UTC</dateCreated>
+  <dateModified>2022-09-04 06:01:25.611 UTC</dateModified>
+</layer>

@@ -1,0 +1,22 @@
+<layer>
+  <name>map_q_data_spasial_purworejo_nonagri_semakbelukar</name>
+  <id>LayerInfoImpl-1d6703e9:17ea56f71ac:-7991</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-665bd1f:17e9f01d1c5:-7bd5</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--570ae188:124761b8d78:-7fe0</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-1d6703e9:17ea56f71ac:-7992</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-01-29 11:04:59.183 UTC</dateCreated>
+  <dateModified>2022-01-29 12:51:11.899 UTC</dateModified>
+</layer>

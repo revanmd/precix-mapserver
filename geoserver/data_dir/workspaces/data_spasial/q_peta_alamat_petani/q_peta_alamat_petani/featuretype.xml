@@ -1,0 +1,44 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-1d6703e9:17ea56f71ac:5b1b</id>
+  <name>q_peta_alamat_petani</name>
+  <nativeName>q_peta_alamat_petani</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-665bd1f:17e9f01d1c5:-7c4a</id>
+  </namespace>
+  <title>q_peta_alamat_petani</title>
+  <keywords>
+    <string>features</string>
+    <string>q_peta_alamat_petani</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>109.8757140947274</minx>
+    <maxx>109.959067</maxx>
+    <miny>-7.751362</miny>
+    <maxy>-7.56187</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>109.8757140947274</minx>
+    <maxx>109.959067</maxx>
+    <miny>-7.751362</miny>
+    <maxy>-7.56187</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-1d6703e9:17ea56f71ac:5b1a</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

@@ -1,0 +1,41 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--5706e53b:180d00789a2:-2cee</id>
+  <name>kec_tanahlaut</name>
+  <nativeName>kec_tanahlaut</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--5706e53b:180d00789a2:-2d0c</id>
+  </namespace>
+  <title>kec_tanahlaut</title>
+  <keywords>
+    <string>features</string>
+    <string>kec_tanahlaut</string>
+  </keywords>
+  <srs>EPSG:404000</srs>
+  <nativeBoundingBox>
+    <minx>114.51455960300007</minx>
+    <maxx>115.377370807</maxx>
+    <miny>-4.178060069999919</miny>
+    <maxy>-3.510373939000018</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>114.51455960300007</minx>
+    <maxx>115.377370807</maxx>
+    <miny>-4.178060069999919</miny>
+    <maxy>-3.510373939000018</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--5706e53b:180d00789a2:-2d0b</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

@@ -1,0 +1,44 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-1d6703e9:17ea56f71ac:-7998</id>
+  <name>map_q_data_spasial_purworejo_nonagri_alang</name>
+  <nativeName>map_q_data_spasial_purworejo_nonagri_alang</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-665bd1f:17e9f01d1c5:-7c4a</id>
+  </namespace>
+  <title>Peta Non Agri Alang</title>
+  <keywords>
+    <string>features</string>
+    <string>map_q_data_spasial_purworejo_nonagri_alang</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>109.815726515</minx>
+    <maxx>110.142180288828</maxx>
+    <miny>-7.89185410016263</miny>
+    <maxy>-7.57052094599996</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>109.815726515</minx>
+    <maxx>110.142180288828</maxx>
+    <miny>-7.89185410016263</miny>
+    <maxy>-7.57052094599996</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-665bd1f:17e9f01d1c5:-7900</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

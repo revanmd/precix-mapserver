@@ -1,0 +1,22 @@
+<layer>
+  <name>ortho 1 subang k clip</name>
+  <id>LayerInfoImpl--398f8ad:1830ba8d42c:1545</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--398f8ad:1830ba8d42c:1548</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--398f8ad:1830ba8d42c:1548</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--398f8ad:1830ba8d42c:1544</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-09-05 07:25:28.339 UTC</dateCreated>
+  <dateModified>2022-09-05 07:28:06.800 UTC</dateModified>
+</layer>

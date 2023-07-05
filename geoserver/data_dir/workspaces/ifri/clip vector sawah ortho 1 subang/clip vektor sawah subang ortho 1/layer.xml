@@ -1,0 +1,21 @@
+<layer>
+  <name>clip vektor sawah subang ortho 1</name>
+  <id>LayerInfoImpl--398f8ad:1830ba8d42c:158c</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe3</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--570ae188:124761b8d78:-7fe3</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--398f8ad:1830ba8d42c:158b</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-09-05 07:33:42.710 UTC</dateCreated>
+</layer>

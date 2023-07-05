@@ -1,0 +1,22 @@
+<layer>
+  <name>admin_purworejo</name>
+  <id>LayerInfoImpl--1d1d1a20:17e9e5addf8:-7ffb</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--1d1d1a20:17e9e5addf8:-7ff9</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-37b18cc6:14d5d036d48:-8000</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--1d1d1a20:17e9e5addf8:-7ffc</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-01-28 04:16:08.10 UTC</dateCreated>
+  <dateModified>2022-09-04 08:42:26.375 UTC</dateModified>
+</layer>

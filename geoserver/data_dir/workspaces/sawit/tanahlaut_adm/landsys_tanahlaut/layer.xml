@@ -1,0 +1,14 @@
+<layer>
+  <name>landsys_tanahlaut</name>
+  <id>LayerInfoImpl--5706e53b:180d00789a2:-2ceb</id>
+  <type>VECTOR</type>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--5706e53b:180d00789a2:-2cec</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-05-31 11:04:07.862 UTC</dateCreated>
+  <dateModified>2022-05-31 11:04:59.575 UTC</dateModified>
+</layer>

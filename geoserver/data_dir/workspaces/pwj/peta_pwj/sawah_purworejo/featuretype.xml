@@ -1,0 +1,45 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--1d1d1a20:17e9e5addf8:-7ff4</id>
+  <name>sawah_purworejo</name>
+  <nativeName>sawah_purworejo</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--1d1d1a20:17e9e5addf8:-7ffe</id>
+  </namespace>
+  <title>Sawah</title>
+  <abstract>Peta Sawah</abstract>
+  <keywords>
+    <string>sawah_purworejo</string>
+    <string>features</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>109.798067</minx>
+    <maxx>110.13472</maxx>
+    <miny>-7.89432947096478</miny>
+    <maxy>-7.51941884344005</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>109.798067</minx>
+    <maxx>110.13472</maxx>
+    <miny>-7.89432947096478</miny>
+    <maxy>-7.51941884344005</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--1d1d1a20:17e9e5addf8:-7ffd</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

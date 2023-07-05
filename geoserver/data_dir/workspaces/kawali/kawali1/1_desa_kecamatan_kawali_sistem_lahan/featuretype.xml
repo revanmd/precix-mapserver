@@ -1,0 +1,44 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--6bb10c95:181a94f0aa9:-775e</id>
+  <name>1_desa_kecamatan_kawali_sistem_lahan</name>
+  <nativeName>1_desa_kecamatan_kawali_sistem_lahan</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--6bb10c95:181a94f0aa9:-7760</id>
+  </namespace>
+  <title>1_desa_kecamatan_kawali_sistem_lahan</title>
+  <keywords>
+    <string>features</string>
+    <string>1_desa_kecamatan_kawali_sistem_lahan</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>108.296110109759</minx>
+    <maxx>108.400510109759</maxx>
+    <miny>-7.21344536171706</miny>
+    <maxy>-7.10294536171706</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>108.296110109759</minx>
+    <maxx>108.400510109759</maxx>
+    <miny>-7.21344536171706</miny>
+    <maxy>-7.10294536171706</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--6bb10c95:181a94f0aa9:-775f</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

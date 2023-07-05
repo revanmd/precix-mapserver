@@ -1,0 +1,21 @@
+<layer>
+  <name>q_data_spasial_tanahlaut_landsystem</name>
+  <id>LayerInfoImpl--5706e53b:1814c6b2c20:-71df</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-665bd1f:17e9f01d1c5:-7be9</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-37b18cc6:14d5d036d48:-8000</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--5706e53b:1814c6b2c20:-71e0</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-06-10 08:43:59.559 UTC</dateCreated>
+</layer>

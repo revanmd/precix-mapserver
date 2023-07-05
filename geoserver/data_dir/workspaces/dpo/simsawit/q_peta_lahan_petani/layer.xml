@@ -1,0 +1,13 @@
+<layer>
+  <name>q_peta_lahan_petani</name>
+  <id>LayerInfoImpl--5706e53b:1814c6b2c20:-50bf</id>
+  <type>VECTOR</type>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--5706e53b:1814c6b2c20:-50c0</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-06-10 14:39:41.825 UTC</dateCreated>
+</layer>

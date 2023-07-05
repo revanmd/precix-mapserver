@@ -1,0 +1,44 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-268eb811:1830224494d:-474e</id>
+  <name>q_map_tidak_ortho1_purwo</name>
+  <nativeName>q_map_tidak_ortho1_purwo</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-268eb811:182e49bbebd:-1698</id>
+  </namespace>
+  <title>q_map_tidak_ortho1_purwo</title>
+  <keywords>
+    <string>features</string>
+    <string>q_map_tidak_ortho1_purwo</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>109.981589729</minx>
+    <maxx>109.984381662</maxx>
+    <miny>-7.8058695577</miny>
+    <maxy>-7.804549511</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>109.981589729</minx>
+    <maxx>109.984381662</maxx>
+    <miny>-7.8058695577</miny>
+    <maxy>-7.804549511</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-268eb811:1830224494d:-474f</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

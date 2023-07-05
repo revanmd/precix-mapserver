@@ -1,0 +1,44 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--5706e53b:1814c6b2c20:-71e0</id>
+  <name>q_data_spasial_tanahlaut_landsystem</name>
+  <nativeName>q_data_spasial_tanahlaut_landsys</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--5706e53b:180d00789a2:-2d0c</id>
+  </namespace>
+  <title>q_data_spasial_tanahlaut_landsystem</title>
+  <keywords>
+    <string>features</string>
+    <string>q_data_spasial_tanahlaut_landsys</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>114.51419304500003</minx>
+    <maxx>115.37775657700004</maxx>
+    <miny>-4.178060070000109</miny>
+    <maxy>-3.510416151999971</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>114.51419304500003</minx>
+    <maxx>115.37775657700004</maxx>
+    <miny>-4.178060070000109</miny>
+    <maxy>-3.510416151999971</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--5706e53b:1814c6b2c20:-71f4</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

@@ -1,0 +1,24 @@
+<layer>
+  <name>q_map_kecukupan_n_padi_tanah_ortho0_subang</name>
+  <id>LayerInfoImpl-268eb811:183071cf0e0:493b</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--398f8ad:18307b75fc5:-6d9b</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--398f8ad:18307b75fc5:-6d9b</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-268eb811:183071cf0e0:493a</id>
+  </resource>
+  <queryable>true</queryable>
+  <opaque>false</opaque>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-09-04 06:10:31.678 UTC</dateCreated>
+  <dateModified>2022-09-04 10:53:02.297 UTC</dateModified>
+</layer>

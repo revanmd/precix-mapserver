@@ -1,0 +1,24 @@
+<dataStore>
+  <id>DataStoreInfoImpl-268eb811:182b702d5ad:3b0a</id>
+  <name>extract1</name>
+  <type>Shapefile</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--6bb10c95:181a94f0aa9:-4a4c</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="charset">ISO-8859-1</entry>
+    <entry key="filetype">shapefile</entry>
+    <entry key="create spatial index">true</entry>
+    <entry key="memory mapped buffer">false</entry>
+    <entry key="timezone">Asia/Jakarta</entry>
+    <entry key="enable spatial index">true</entry>
+    <entry key="namespace">http://badarmubarok.id:8080/geoserver/web/grand</entry>
+    <entry key="cache and reuse memory maps">true</entry>
+    <entry key="url">file:///var/www/html/peta/Extract_shp1.shp</entry>
+    <entry key="fstype">shape</entry>
+  </connectionParameters>
+  <__default>false</__default>
+  <dateCreated>2022-08-19 19:24:13.405 UTC</dateCreated>
+  <dateModified>2022-09-13 18:15:06.525 UTC</dateModified>
+</dataStore>

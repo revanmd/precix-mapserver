@@ -1,0 +1,22 @@
+<layer>
+  <name>2_desa_kecamatan_kawali_sistem_lahan</name>
+  <id>LayerInfoImpl--6bb10c95:181a94f0aa9:-775b</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe0</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-37b18cc6:14d5d036d48:-8000</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--6bb10c95:181a94f0aa9:-775c</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-06-28 10:46:32.752 UTC</dateCreated>
+  <dateModified>2022-06-28 10:51:39.51 UTC</dateModified>
+</layer>

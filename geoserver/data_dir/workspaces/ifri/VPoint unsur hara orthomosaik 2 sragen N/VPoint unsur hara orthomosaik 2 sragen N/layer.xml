@@ -1,0 +1,28 @@
+<layer>
+  <name>VPoint unsur hara orthomosaik 2 sragen N</name>
+  <id>LayerInfoImpl--398f8ad:1830afefc3c:2869</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--398f8ad:18308237104:-27a8</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--398f8ad:1830afefc3c:2718</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--398f8ad:18308237104:-27a8</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--398f8ad:18307b75fc5:-6d9b</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--398f8ad:1830afefc3c:2868</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-09-05 01:14:55.332 UTC</dateCreated>
+  <dateModified>2022-09-05 01:17:31.111 UTC</dateModified>
+</layer>

@@ -1,0 +1,55 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-665bd1f:17e9f01d1c5:-78ff</id>
+  <name>map_q_data_spasial_purworejo_admdesa_ar</name>
+  <nativeName>map_q_data_spasial_purworejo_admdesa_ar</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-665bd1f:17e9f01d1c5:-7c4a</id>
+  </namespace>
+  <title>Administrasi Desa</title>
+  <abstract>data administrasi desa</abstract>
+  <keywords>
+    <string>features</string>
+    <string>map_q_data_spasial_purworejo_admdesa_ar</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>109.798067</minx>
+    <maxx>110.142212</maxx>
+    <miny>-7.89380899999999</miny>
+    <maxy>-7.51969817952838</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>109.798067</minx>
+    <maxx>110.142212</maxx>
+    <miny>-7.89380899999999</miny>
+    <maxy>-7.51969817952838</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="elevation">
+      <dimensionInfo>
+        <enabled>false</enabled>
+      </dimensionInfo>
+    </entry>
+    <entry key="time">
+      <dimensionInfo>
+        <enabled>false</enabled>
+      </dimensionInfo>
+    </entry>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-665bd1f:17e9f01d1c5:-7900</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

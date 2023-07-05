@@ -1,0 +1,25 @@
+<dataStore>
+  <id>DataStoreInfoImpl--398f8ad:18307b75fc5:-6da4</id>
+  <name>Sebaran Unsur Hara N Orthomosaik 1 Subang</name>
+  <description>Sebaran Unsur Hara N Orthomosaik 1 Subang</description>
+  <type>Shapefile</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-268eb811:182e49bbebd:-1699</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="charset">ISO-8859-1</entry>
+    <entry key="filetype">shapefile</entry>
+    <entry key="create spatial index">true</entry>
+    <entry key="memory mapped buffer">false</entry>
+    <entry key="timezone">Asia/Jakarta</entry>
+    <entry key="enable spatial index">true</entry>
+    <entry key="namespace">ifri</entry>
+    <entry key="cache and reuse memory maps">true</entry>
+    <entry key="skipScan">true</entry>
+    <entry key="url">file:///var/www/html/ifri/vektor/VPoint unsur hara orthomosaik 0 subang N.shp</entry>
+    <entry key="fstype">shape</entry>
+  </connectionParameters>
+  <__default>false</__default>
+  <dateCreated>2022-09-04 10:18:51.366 UTC</dateCreated>
+</dataStore>

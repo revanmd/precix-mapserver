@@ -1,0 +1,24 @@
+<dataStore>
+  <id>DataStoreInfoImpl--398f8ad:1830afefc3c:28d0</id>
+  <name>VPoint unsur hara orthomosaik 2 Purworejo N</name>
+  <type>Shapefile</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-268eb811:182e49bbebd:-1699</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="charset">ISO-8859-1</entry>
+    <entry key="filetype">shapefile</entry>
+    <entry key="create spatial index">true</entry>
+    <entry key="memory mapped buffer">false</entry>
+    <entry key="timezone">Asia/Jakarta</entry>
+    <entry key="enable spatial index">true</entry>
+    <entry key="namespace">ifri</entry>
+    <entry key="cache and reuse memory maps">true</entry>
+    <entry key="skipScan">true</entry>
+    <entry key="url">file:///var/www/html/ifri/vektor/VPoint unsur hara orthomosaik 2 Purworejo N.shp</entry>
+    <entry key="fstype">shape</entry>
+  </connectionParameters>
+  <__default>false</__default>
+  <dateCreated>2022-09-05 01:36:16.730 UTC</dateCreated>
+</dataStore>

@@ -1,0 +1,44 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-665bd1f:17e9f01d1c5:-7c32</id>
+  <name>nonagrihutankering_ar_25k</name>
+  <nativeName>nonagrihutankering_ar_25k</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-665bd1f:17e9f01d1c5:-7c4a</id>
+  </namespace>
+  <title>Non Agri Hutan Kering</title>
+  <keywords>
+    <string>features</string>
+    <string>nonagrihutankering_ar_25k</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>109.818329306808</minx>
+    <maxx>109.959211565</maxx>
+    <miny>-7.66591993799997</miny>
+    <maxy>-7.53101274199997</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>109.818329306808</minx>
+    <maxx>109.959211565</maxx>
+    <miny>-7.66591993799997</miny>
+    <maxy>-7.53101274199997</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-665bd1f:17e9f01d1c5:-7c33</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

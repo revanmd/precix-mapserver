@@ -1,0 +1,22 @@
+<layer>
+  <name>peta_sebaran_hara_k_ortho1_sragen</name>
+  <id>LayerInfoImpl-3010d686:183bf8fa957:-6c6d</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-145d3c3f:183be208ad1:-79f6</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-145d3c3f:183be208ad1:-79f6</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-3010d686:183bf8fa957:-6c6e</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-10-10 01:55:27.421 UTC</dateCreated>
+  <dateModified>2022-10-10 01:55:54.7 UTC</dateModified>
+</layer>
